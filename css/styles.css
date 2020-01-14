@@ -135,6 +135,91 @@ body {
   border: 2px solid #fff;
   background: transparent; }
 
+#menu {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#187f73), to(#04679d));
+  background: linear-gradient(to bottom, #187f73, #04679d);
+  overflow: hidden;
+  right: 0;
+  -webkit-box-pack: start;
+          justify-content: flex-start; }
+  #menu .top {
+    display: -webkit-box;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: #0f4944;
+    position: relative;
+    -webkit-box-pack: center;
+            justify-content: center; }
+    #menu .top div {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+      align-self: center;
+      width: 90%; }
+      #menu .top div i {
+        color: #ffffff;
+        font-size: 30px; }
+      #menu .top div img {
+        position: relative;
+        width: 10vw; }
+  #menu .options {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center; }
+    #menu .options ul {
+      width: 90vw;
+      height: 30vh; }
+      #menu .options ul li {
+        padding-left: 4vw;
+        padding-right: 4vw;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.462);
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
+        height: 13vh;
+        font-size: 18px; }
+        #menu .options ul li i {
+          color: white; }
+        #menu .options ul li a {
+          color: white; }
+  #menu .sesions {
+    height: 60vh;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: end;
+            align-items: flex-end; }
+    #menu .sesions #account {
+      display: -webkit-box;
+      display: flex;
+      height: 20vh;
+      text-align: center;
+      color: white; }
+      #menu .sesions #account #sign-in, #menu .sesions #account #sign-up {
+        font-size: 14px; }
+        #menu .sesions #account #sign-in button, #menu .sesions #account #sign-up button {
+          margin-top: 2vh;
+          padding: 2vw;
+          width: 40vw;
+          font-size: 14px; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
