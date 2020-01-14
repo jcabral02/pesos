@@ -41,16 +41,63 @@
           </div>
           <div class="col-6 col-lg-9">
             <nav>
-              <ul class="main-menu">
-                <li> <a class="text-white mr-lg-3" href="empresas.html">Empresas</a> </li>
-                <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
-                <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
-            </ul>
+              <!-- menu desktop -->
+              <ul class="main-menu d-none d-lg-block d-xl-none d-xl-block d-none d-md-block d-lg-none">
+                  <li> <a class="text-white mr-lg-3" href="">Empresas</a> </li>
+                  <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
+                  <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
+              </ul>
+              <!-- menu movil -->
+              <ul class="movil-menu d-none d-sm-block d-md-none d-block d-sm-none">
+                  <li><button id="btn_menu" class="text-white mr-lg-3" style="border: none; background-color: transparent;">Menu</button></li>
+              </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
+
+    <div id="menu">
+      <section class="top">
+        <div>
+          <img src="img/logo-movil.PNG" alt="logo">
+          <i class="fas fa-times" id="btn_close"></i>
+        </div>
+      </section>
+      <section class="options">
+        <ul>
+          <li><a href="#">Inicio</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="#">Empresas</a><i class="fas fa-chevron-right"></i></li>
+        </ul>
+      </section>
+      <section class="sesions">
+        <div id="account">
+          <div id="sign-in">
+            <span>Accede a tu cuenta</span>
+            <button style="border: none;" class="rounded-button-white">Iniciar Sesion</button>
+          </div>
+          <div id="sign-up">
+            <span>¿No tienes cuenta?</span>
+            <button class="outline-button">Registrate</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var menu = document.getElementById('menu');
+      var btnMenu = document.getElementById('btn_menu');
+      var btnClose = document.getElementById('btn_close');
+
+      btnMenu.addEventListener('click', function(){
+        menu.style.width = "100vw";
+      });
+
+      btnClose.addEventListener('click', function(){
+        menu.style.width = "0";
+      })
+
+    </script>
 
 <section class="owl-carousel">
   <div class="container-fluid slide-1">
@@ -58,7 +105,7 @@
       <div class="col-12 col-lg-6 offset-lg-3 text-center"> 
         <div class="content-slider">
           <h1>Con ePesos, accede a tu nómina ¡en cualquier momento!</h1>
-          <h2 class="mb-3">Puedes hacer retiros en ventanilla y a cuentas bancarias.</h2>
+          <h2 class="mb-3 description">Puedes hacer retiros en ventanilla y a cuentas bancarias.</h2>
           <a  class="rounded-button-white d-inline-block" href="#">Conóce más de ePesos</a>
           <a href="#" class="d-inline-block">
             <img style="width:50px"; src="img/play.svg" class="ml-lg-4 d-inline-block" alt="">
@@ -74,7 +121,7 @@
       <div class="col-12 col-lg-6 offset-lg-3 text-center">
         <div class="content-slider">
           <h1>Reduce el estrés y ansiedad financieros de tus colaboradores</h1>
-          <h2 class="mb-3">Con ePesos tus colaboradores pueden adelantar fácilmente una parte de su nómina.</h2>
+          <h2 class="mb-3 description">Con ePesos tus colaboradores pueden adelantar fácilmente una parte de su nómina.</h2>
           <a  class="rounded-button-white d-inline-block" href="#">Conóce más de ePesos</a>
           <a href="#" class="d-inline-block">
             <img style="width:50px"; src="img/play.svg" class="ml-lg-4 d-inline-block" alt="">
@@ -82,9 +129,7 @@
           </a>
         </div>
       </div>
-      <div class="overlay"></div>
-
-    </div>
+      <div class="overlay"></div></div>
   </div>
 </section>
 
@@ -180,30 +225,49 @@
               
           </section>
         </div>
-                    
-        <section class="owl-carousel owl-carousel-2  beneficios">
-            <div class="w-85 d-flex float-right pt-lg-5 mt-lg-5">
-                  <div class="w-50 mr-lg-2">
-                    <img class="img-fluid" src="img/beneficio1.png" alt="">
-                  </div>
-                  <div class="w-40 py-lg-5 pl-lg-2">
-                      <h2 class="my-lg-5 pt-lg-5">Acerca de ePesos</h2>
-                      <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
-                  </div>
-              </div> 
 
-              <div class="w-85 d-flex float-right pt-lg-5 mt-lg-5">
-                  <div class="w-50 mr-lg-2">
-                    <img class="img-fluid" src="img/beneficio1.png" alt="">
-                  </div>
-                  <div class="w-40 py-lg-5 pl-lg-2">
-                      <h2 class="my-lg-5 pt-lg-5">Acerca de ePesos</h2>
-                      <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
-                  </div>
+        <!-- carousel escritorio -->
+        <section class="owl-carousel beneficios	d-none d-md-block d-lg-none d-xl-block d-lg-block d-xl-none d-sm-block d-md-none">
+            <div class="w-85 d-flex float-right pt-lg-5 mt-lg-5">
+              <div class="w-50 mr-lg-2">
+                <img class="img-fluid" src="img/beneficio1.png" alt="">
               </div>
+              <div class="w-40 py-lg-5 pl-lg-2">
+                  <h2 class="my-lg-5 pt-lg-5">Acerca de ePesos</h2>
+                  <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
+              </div>
+            </div> 
+
+            <div class="w-85 d-flex float-right pt-lg-5 mt-lg-5">
+              <div class="w-50 mr-lg-2">
+                <img class="img-fluid" src="img/beneficio1.png" alt="">
+              </div>
+              <div class="w-40 py-lg-5 pl-lg-2">
+                  <h2 class="my-lg-5 pt-lg-5">Acerca de ePesos</h2>
+                  <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
+              </div>
+            </div>
         </section>
-        
-        <section class="container-fluid py-4 bg-ice-blue">
+
+        <!-- carousel movil -->
+        <div id="carousel-movil" class="d-block d-sm-none ">
+          <div id="textura" class="d-block d-sm-none ">
+          </div>
+          <section class="owl-carousel beneficios-movil">
+            <div id="movil" class="w-100 pt-lg-5 mt-lg-5">
+              <div style="width: 70%!important;" class="w-50 mr-lg-2">
+                <h1 style="color: cadetblue;" class="my-lg-5 pt-lg-5">Acerca de ePesos</h1>
+                <img class="img-fluid" src="img/beneficio1.png" alt="">
+              </div>
+              <div style="width: 58%!important;" class="w-50 py-lg-5 pl-lg-2">
+                  <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--  -->
+        <section class="container-fluid bg-white py-4">
           <div class="row p-lg-0">
             <div class="col-12 text-center col-lg-8 offset-lg-2 py-lg-5">
               <h2>¡Conoce todos los beneficios que ePesos tiene para tu empresa!</h2>

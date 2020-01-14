@@ -264,9 +264,21 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.0970763) 80%, rgba(0, 0, 0, 0) 100%);
   top: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9998;
   width: 100%;
   padding: 30px 20px; }
+  .header nav .main-menu, .header-empresas nav .main-menu {
+    text-align: right; }
+    .header nav .main-menu li, .header-empresas nav .main-menu li {
+      display: inline-block;
+      color: #fff; }
+  .header nav .movil-menu, .header-empresas nav .movil-menu {
+    text-align: right; }
+    .header nav .movil-menu li, .header-empresas nav .movil-menu li {
+      display: inline-block;
+      color: #fff; }
+      .header nav .movil-menu li button, .header-empresas nav .movil-menu li button {
+        cursor: pointer; }
 
 .header-empresas {
   background: rgba(0, 0, 0, 0.7);
@@ -285,11 +297,11 @@ nav .main-menu {
     opacity: 1;
     position: relative;
     margin-right: 0 !important; }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item h2 {
+    .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
       font: 400 20px/30px "Open Sans", sans-serif;
       color: #FFFFFF; }
       @media (max-width: 676px) {
-        .owl-carousel .owl-stage-outer .owl-stage .owl-item h2 {
+        .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
           font: 400 16px "Open Sans", sans-serif; } }
     .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
       position: relative;
@@ -334,6 +346,45 @@ nav .main-menu {
     color: #FFFFFF;
     opacity: 1;
     line-height: 2.4; }
+
+#carousel-movil #textura {
+  position: absolute;
+  right: 9vw;
+  display: -webkit-box;
+  display: flex;
+  margin-top: 38vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#004190), to(#003e65));
+  background: linear-gradient(to bottom, #004190, #003e65);
+  width: 80vw;
+  height: 22%;
+  border-radius: 15px; }
+
+#carousel-movil #movil {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 6vh; }
+
+.beneficios-movil {
+  height: 100vh;
+  padding: 0; }
+  .beneficios-movil h2 {
+    font: Extrabold 44px/90px "Open Sans", sans-serif; }
+    @media (max-width: 676px) {
+      .beneficios-movil h2 {
+        font: 400 24px "Open Sans", sans-serif; } }
+  .beneficios-movil p {
+    text-align: left;
+    font: Regular 20px/40px Open Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    line-height: 1.5; }
 
 #pop-in {
   display: none;

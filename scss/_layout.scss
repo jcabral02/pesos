@@ -3,9 +3,28 @@
     background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.09707633053221287) 80%, rgba(0,0,0,0) 100%);
     top:0;
     right:0;
-    z-index: 9999;
+    z-index: 9998;
     width: 100%;
     padding: 30px 20px;
+    nav{
+        .main-menu{
+            text-align: right;
+            li{
+                display: inline-block;
+                color: $white;
+            }
+        }
+        .movil-menu{
+            text-align: right;
+            li{
+                display: inline-block;
+                color: $white;
+                button{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 .header-empresas{
     @extend .header;
@@ -21,6 +40,7 @@ nav{
         }
     }
 }
+
 .owl-carousel{
     .owl-stage-outer {
         width: auto;
@@ -30,7 +50,7 @@ nav{
                 opacity: 1;
                 position: relative;
                 margin-right: 0 !important;
-                h2{
+                .description{
                     font: $Regular 20px/30px $Open_Sans;
                     color: #FFFFFF;
                     @media (max-width: 676px) {
@@ -90,11 +110,55 @@ nav{
         opacity: 1;
         line-height: 2.4;
     }
-    .owl-stage-outer .owl-stage{
-        .owl-stage{
+    // .owl-stage-outer .owl-stage{
+    //     .owl-stage{
 
+    //     }
+    // }
+}
+
+#carousel-movil{
+    #textura{
+        position: absolute;
+        right: 9vw;
+        display: flex;
+        margin-top: 38vh;
+        background: linear-gradient(to bottom, #004190, #003e65);
+        width: 80vw;
+        height: 22%;
+        border-radius: 15px;
+    }
+    #movil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 6vh;
+    }
+}
+
+.beneficios-movil{
+    height:100vh;
+    padding: 0;
+    h2{
+        font: Extrabold 44px/90px $Open_Sans;
+        @media (max-width: 676px) {
+            font: $Regular 24px $Open_Sans;
         }
     }
+    p{
+        text-align: left;
+        font: Regular 20px/40px Open Sans;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+        line-height: 1.5;
+    }
+    // .owl-stage-outer .owl-stage{
+    //     .owl-stage{
+
+    //     }
+    // }
 }
 
 #pop-in{
