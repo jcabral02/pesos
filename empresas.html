@@ -1,0 +1,504 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>ePesos</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- Bootstrap4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/18516ef2f3.js" crossorigin="anonymous"></script>
+
+  <!-- Slider -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">  
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Content ePesos-->
+    <header class="header-empresas">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <div class="logo"><a href="index.html"><img src="img/logo-epesos.svg" alt=""></a></div>
+          </div>
+          <div class="col-6 col-lg-9">
+            <nav>
+              <ul class="main-menu">
+                <li> <a class="text-white mr-lg-3" href="empresas.html">Empresas</a> </li>
+                <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
+                <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
+            </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<section class="owl-carousel">
+  <div class="container-fluid slide-1">
+    <div class="row no-gutter">
+      <div class="col-12 col-lg-6 offset-lg-3 text-center"> 
+        <div class="content-slider">
+          <h1>Con ePesos, accede a tu nómina ¡en cualquier momento!</h1>
+          <h2 class="mb-3">Puedes hacer retiros en ventanilla y a cuentas bancarias.</h2>
+          <a  class="rounded-button-white d-inline-block" href="#">Conóce más de ePesos</a>
+          <a href="#" class="d-inline-block">
+            <img style="width:50px"; src="img/play.svg" class="ml-lg-4 d-inline-block" alt="">
+            <p class="d-inline-block text-white">Ver video</p>
+          </a>
+        </div>   
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="container-fluid slide-2">
+    <div class="row no-gutter">
+      <div class="col-12 col-lg-6 offset-lg-3 text-center">
+        <div class="content-slider">
+          <h1>Reduce el estrés y ansiedad financieros de tus colaboradores</h1>
+          <h2 class="mb-3">Con ePesos tus colaboradores pueden adelantar fácilmente una parte de su nómina.</h2>
+          <a  class="rounded-button-white d-inline-block" href="#">Conóce más de ePesos</a>
+          <a href="#" class="d-inline-block">
+            <img style="width:50px"; src="img/play.svg" class="ml-lg-4 d-inline-block" alt="">
+            <p class="d-inline-block text-white text-left">Ver video</p>
+          </a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+
+    </div>
+  </div>
+</section>
+
+<section id="pop-in">
+  <div id="modal-in">
+    <div class="title">
+      <h5>Entra aqu&iacute; con tu cuenta de Epesos</h5>
+    </div>
+    <form action="">
+      <input class="phone" type="text" placeholder="Numero de Celular">
+      <input id="pass" type="password" placeholder="Contrase&ntilde;a"><br>
+      <input type="submit" value="Entrar">
+    </form>
+    <a href="#">Olvide mi contrase&ntilde;a</a>
+    <hr>
+    <div id="forgot"><span>¿No tienes cuenta? </span><a href="#">Registrate aqu&iacute;</a></div>
+  </div>
+</section>
+
+<section id="pop-in-2">
+
+  <div id="modal-in-2">
+    <i class="fas fa-times-circle" id="close"></i>
+    <div id="title">
+      <h5>Entra aqu&iacute; con tu cuenta de Epesos</h5>
+    </div>
+    <form action="">
+      <input class="phone" type="text" placeholder="Numero de Celular">
+      <input id="pass" type="password" placeholder="Contrase&ntilde;a"><br>
+      <input type="submit" value="Entrar">
+    </form>
+    <a href="#">Olvide mi contrase&ntilde;a</a>
+    <hr>
+    <div id="forgot"><span>¿No tienes cuenta? </span><a href="#">Registrate aqu&iacute;</a></div>
+  </div>
+</section>
+
+<section id="pop-up">
+  <div id="modal-up">
+    <i class="fas fa-times-circle" id="close-up"></i>
+    <div id="titles">
+      <h5>Llena los siguientes datos para agendar tu cita</h5>
+    </div>
+    <form action="">
+      <input id="names" type="text" placeholder="*Nombres(s)">
+      <input id="last" type="text" placeholder="*Apellidos">
+      <input id="company" type="text" placeholder="*Empresa">
+      <input id="email" type="email" placeholder="*Correo electronico corporativo">
+      <input type="submit" name="" id="" value="Enviar">
+    </form>
+    <div id="warn">
+      <span>* Datos requeridos</span>
+    </div>
+  </div>
+</section>
+
+<section role="main" class="beneficios-empresas one-edge-shadow">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="row">
+            <div class="col-12 text-left">
+                <h2>Beneficios</h2>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row beneficio">
+                    <div class="col-2 paso">1</div>
+                    <div class="col-9">
+                        <h3>Aumento de productividad</h3>
+                        <p>+100 horas de productividad perdidas al año de empleados en estrés financiero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row beneficio">
+                    <div class="col-2 paso">2</div>
+                    <div class="col-9">
+                        <h3>Reduce el % de rotación</h3>
+                        <p>Aproximadamente cuesta 22 mil pesos que se vaya un operativo con sueldo promedio de 5 mil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row beneficio">
+                    <div class="col-2 paso">3</div>
+                    <div class="col-9">
+                        <h3>Reduce el estrés laboral y ausentismo de los trabajadores</h3>
+                        <p>El estrés aumenta el ausentismo. 42% de los empleados se ausentan para solucionar emergencias financieras o por problemas de salud ligados al estrés laboral.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row beneficio">
+                    <div class="col-2 paso">4</div>
+                    <div class="col-9">
+                        <h3>Transacciones 24 x 7 x 365</h3>
+                        <p>Nuestra plataforma está activa todos los días de la semana a todas horas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row beneficio">
+                    <div class="col-2 paso">5</div>
+                    <div class="col-9">
+                        <h3>Fácil administración</h3>
+                        <p>Funciona con cualquier sistema de nómina.</p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-6 sin-costo">
+                        <h4>Sin costo para la empresa</h4>
+                    </div>
+                    <div class="col-6 bajo-costo">
+                        <h4>Bajo costo, seguro e inmediato para el trabajador</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="saber-mas">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 text-center">
+                <h2>¿Quieres saber aun más?</h2>
+                <a href="#" class="rounded-button-white mt-lg-5">Consulta las preguntas frecuentess</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="owl-carousel">
+        Slider
+    </div>
+</section>
+
+<section class="clientes">
+    <div class="container">
+        <div class="row pt-lg-5">
+            <div class="col-12 text-center">
+                <h2>Nuestros clientes</h2>
+                <p class="text-blue ">Estamos orgullosos de haber ayudado a ofrecer una estabilidad financiera a los colaboradores de las siguientes empresas nacionales y multinacionales.</p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <img src="img/cliente1.png" alt="">
+                </div>
+                <div class="col-6 col-lg-4">
+                    <img src="img/cliente2.png" alt="">
+                </div>
+                <div class="col-6 col-lg-4">
+                    <img src="img/cliente3.png" alt="">
+                </div>
+            </div>
+            <div class="row mt-lg-3">
+                <div class="col-6 col-lg-4">
+                    <img src="img/cliente4.png" alt="">
+                </div>
+                <div class="col-6 col-lg-4">
+                    <img src="img/cliente5.png" alt="">
+                </div>
+                <div class="col-6 col-lg-4">
+                    <img src="img/cliente6.png" alt="">
+                </div>
+            </div>
+            <div class="divider my-5"></div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-ice-blue">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 py-lg-5 mt-lg-4">
+                <h2>Inversionistas</h2>
+                <p class="text-blue">Estamos respaldados por fondos nacionales, internacionales y de impacto social.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img src="img/inversionista1.png" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="img/inversionista2.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img src="img/inversionista3.png" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="img/inversionista4.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img src="img/inversionista5.png" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="img/inversionista6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="divider my-lg-5"></div>
+        </div>
+    
+        <div class="row pb-lg-5">
+            <div class="col-12 col-lg-8 offset-lg-2 text-center pb-lg-5">
+                <p>Contamos con un aliado comercial, experto en el bienestar, y líder mundial en prestaciones como vales de despensa.</p>
+                <img src="img/sivale.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="equipo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1 text-center">
+                <h2>Equipo ePesos</h2>
+                <p>Creemos que todos nuestros colaboradores deben tener un dosis de iniciativa, sean inquietos, emprendedores y les guste crear cosas. Nos apasiona ofrecer soluciones a todos aquellos que actualmente están desatendidos o ignorados por la banca tradicional.</p>
+                <a class="rounded-button-white" href="#">Conoce al equipo de sPesos</a>
+            </div>
+        </div>
+    </div>  
+</section>
+
+<section class="conoce">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1 text-center">
+                <h2>¡Conoce todos los beneficios que tiene ePesos para tu empresa!</h2>
+                <a class="rounded-button-gradient mt-lg-5" href="#">Agendar una cita</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <div class="container-fluid">
+    <section class="row py-lg-5">
+      <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
+        <img class="d-block" src="img/logo-epesos.svg" alt="">
+        <a class="d-block mt-4 text-white" href="#">Empresas</a>
+      </div>
+      <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
+        <h4>Contáctanos</h4>
+        <p>José Mariano Abasolo 827, Centro. 64000 Monterrey, N.L.</p>
+        <p>800 037 3767</p>
+        <a href="mailto:hola@epesos.com">hola@epesos.com</a>
+      </div>
+      <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
+        <div class="">
+          <h4>Síguenos</h4>
+          <ul class="social">
+              <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="mt-lg-5">
+          <h4>Descarga la App</h4>
+          <img class="w-40" src="img/google-play-badge.png" alt="Google Play">
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 py-3 py-lg-0 mb-5 mt-3 mb-lg-0">
+        <div class="row">
+          <div class="col-6 col-lg-12 text-lg-center text-left">
+            <h4>Accede a tu cuenta</h4>
+            <button style="border: none;" class="rounded-button-white sign-in mt-3">Iniciar Sesión</button>
+          </div>
+          <div class="col-6 col-lg-12 mt-lg-5 text-lg-center text-left">
+            <h4>¿No tienes cuenta?</h4>
+            <button class="outline-button register mt-3">Registrate</button>
+          </div> 
+        </div>
+      </div>
+  </section>
+
+  <section class="copyright row">
+    <div class="col-12 col-lg-3">
+        <p>®Todos los derechos reservados. <br> <strong>ePesos 2020</strong></p>
+    </div>
+    <div class="col-12 col-lg-9">
+      <ul class="menu-footer text-lg-right text-left">
+          <li class="py-2 py-lg-0"> <a href="#">Portal administrativo ePesos</a> <span class="ml-lg-4 d-lg-inline-block d-none">|</span class="ml-lg-4"></li class="py-2 py-lg-0">
+          <li class="py-2 py-lg-0"> <a href="#">Preguntas frecuentes </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
+          <li class="py-2 py-lg-0"> <a href="#">Aviso de Privacidad </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
+          <li class="py-2 py-lg-0"> <a href="#">Términos y Condiciones</a></li>
+      </ul>
+  </div>
+  </section>
+  </div>
+</footer>
+  
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items:1,
+        lazyLoad:true,
+        loop:true,
+        autoplay:true,
+        margin:0
+      });
+      $(".owl-carousel-2").owlCarousel({
+        items:1,
+        lazyLoad:true,
+        loop:true,
+        autoplay:true,
+        margin:0
+      });
+    });
+    
+    let btn_sign = document.getElementsByClassName('sign-in');
+    let pop_sign = document.getElementById('pop-in');
+    let pop_sign_2 = document.getElementById('pop-in-2');
+    let modal_sign = document.getElementById('modal-in');
+    let modal_sign_2 = document.getElementById('modal-in-2');
+    let phone = document.getElementsByClassName('phone');
+    let btn_close = document.getElementById('close');
+
+    function close(){
+      pop_sign.style.display = 'none';
+      btn_sign[0].style.background = 'transparent';
+    };
+
+    // modal header
+    btn_sign[0].addEventListener('click', function(){
+      pop_sign.style.display = 'flex';
+      phone[0].focus();
+      btn_sign[0].style.background = 'green';
+    });
+
+    pop_sign.addEventListener('click', close);
+
+    modal_sign.addEventListener('mouseover', function(){
+      pop_sign.removeEventListener('click', close);
+    });
+
+    modal_sign.addEventListener('mouseout', function(){
+      pop_sign.addEventListener('click', close);
+    });
+
+    // modal footer
+
+    function close2(){
+      pop_sign_2.style.display = 'none';
+    };
+
+    btn_sign[1].addEventListener('click', function(){
+      pop_sign_2.style.display = 'flex';
+      phone[1].focus();
+    });
+
+    btn_close.addEventListener('click', close2);
+
+    pop_sign_2.addEventListener('click', close2);
+
+    // modal register
+
+    let btn_up = document.getElementsByClassName('register');
+    let pop_up = document.getElementById('pop-up');
+    let modal_up = document.getElementById('modal-up');
+    let name = document.getElementById('names');
+    let close_up = document.getElementById('close-up');
+
+    for(let i=0; btn_up.length>i; i++){
+      btn_up[i].addEventListener('click', function(){
+        pop_up.style.display = 'flex';
+        name.focus();
+      })
+    }
+
+    
+
+    close_up.addEventListener('click', function(){
+      pop_up.style.display = 'none';
+    })
+
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
