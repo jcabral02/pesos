@@ -1,0 +1,24 @@
+// Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+h1{
+    text-align: center;
+    font: $Extrabold 44px $Open_Sans;
+    @media (max-width: 676px) {
+        font: $Extrabold 24px $Open_Sans;
+    }
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+h2{
+    text-align: center;
+    font: $Extrabold 44px $Open_Sans;
+    @media (max-width: 676px) {
+        font: $Extrabold 24px $Open_Sans;
+    }
+    letter-spacing: 0;
+    color: #385E67;
+    opacity: 1;
+}

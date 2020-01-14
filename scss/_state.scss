@@ -1,0 +1,69 @@
+// Grid Modify
+
+.row.no-gutter {
+    margin-right:0;
+    margin-left:0;
+  }
+  .row.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+  }
+
+.w-40{
+    width: 40%;
+}
+.w-85{
+    width: 85%;
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+            
+}
+
+//Background
+.bg-blue{
+    background: $ice-blue;
+}
+.bg-ice-blue{
+    background: $ice-blue-light;
+}
+
+//Text and Colors
+.text-blue{
+    color:$dark-blue;
+    font-size: 18px;
+}
+.text-blue-small{
+    color:$dark-blue;
+    font-size: 14px;
+}
+
+
+.owl-nav{
+    .owl-prev{
+        background: url('../img/back.png') no-repeat !important;
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+        background-position: center;
+        border: none !important;
+        position: relative;
+    top: 570px;
+    left: 85%;
+        span{
+            display: none !important;
+        }
+    }
+    .owl-next{
+        @extend .owl-prev;
+            background: url('../img/next.png') no-repeat !important;
+    }
+}
+.owl-dots{
+    .owl-dot, .owl-dot active{
+        display: none !important;
+    }
+}
