@@ -375,25 +375,25 @@ nav .main-menu {
     display: inline-block;
     color: #fff; }
 
-.owl-carousel .owl-stage-outer {
+.owl-one .owl-stage-outer {
   width: auto; }
-  .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  .owl-one .owl-stage-outer .owl-stage .owl-item {
     height: 800px;
     opacity: 1;
     position: relative;
     margin-right: 0 !important; }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
+    .owl-one .owl-stage-outer .owl-stage .owl-item .description {
       font: 400 20px/30px "Open Sans", sans-serif;
       color: #FFFFFF; }
       @media (max-width: 676px) {
-        .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
+        .owl-one .owl-stage-outer .owl-stage .owl-item .description {
           font: 400 16px "Open Sans", sans-serif; } }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
+    .owl-one .owl-stage-outer .owl-stage .owl-item .content-slider {
       position: relative;
       z-index: 9999;
       top: 50%;
       left: 0; }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item .overlay {
+    .owl-one .owl-stage-outer .owl-stage .owl-item .overlay {
       position: absolute;
       height: 800px;
       background: -webkit-gradient(linear, left top, left bottom, from(#218d69), to(rgba(5, 108, 164, 0.8)));
@@ -402,12 +402,12 @@ nav .main-menu {
       top: 0;
       left: 0;
       width: 100%; }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
+    .owl-one .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-one .owl-stage-outer .owl-stage .owl-item .slide-2 {
       background: url("../img/slider0.png") no-repeat;
       background-size: cover !important;
       position: relative;
       height: 800px; }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
+    .owl-one .owl-stage-outer .owl-stage .owl-item .slide-2 {
       background: url("../img/slider2.png") no-repeat; }
 
 .beneficios {
@@ -721,7 +721,7 @@ nav .main-menu {
   background: url("../img/sin-costo.jpg") no-repeat;
   background-size: cover;
   padding: 90px 0;
-  border-top: 4px solid #39A935;
+  border-top: 10px solid #39A935;
   border-top-left-radius: 30px;
   color: #fff;
   text-align: center; }
@@ -747,8 +747,41 @@ nav .main-menu {
   background-size: cover;
   padding: 80px 0 0; }
 
+.testimonios .owl-dots {
+  position: absolute;
+  top: 540px;
+  left: 83%; }
+  .testimonios .owl-dots .owl-dot {
+    background: #39A935;
+    width: 40px;
+    height: 5px; }
+
+.testimonios .testimonio {
+  background: url("../img/testimonio.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 600px; }
+  .testimonios .testimonio .texto-testimonio {
+    position: relative;
+    width: 30%;
+    right: -52%;
+    top: 200px; }
+    .testimonios .testimonio .texto-testimonio p {
+      color: #fff;
+      font-size: 20px; }
+    .testimonios .testimonio .texto-testimonio h6 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700; }
+    .testimonios .testimonio .texto-testimonio span {
+      color: #fff;
+      font-size: 12px; }
+
 .beneficios-empresas {
-  padding: 60px 0; }
+  padding: 60px 0;
+  background-image: url("../img/ondas.png") no-repeat;
+  background-size: contain;
+  background-position: center; }
   .beneficios-empresas .beneficio .paso {
     text-align: right;
     font: 700 60px/24px "Open Sans", sans-serif;

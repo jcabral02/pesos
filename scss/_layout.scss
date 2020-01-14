@@ -41,7 +41,7 @@ nav{
     }
 }
 
-.owl-carousel{
+.owl-one{
     .owl-stage-outer {
         width: auto;
         .owl-stage {
@@ -422,7 +422,7 @@ nav{
     background: url('../img/sin-costo.jpg') no-repeat;
     background-size: cover;
     padding: 90px 0;
-    border-top: 4px solid $green;
+    border-top: 10px solid $green;
     border-top-left-radius: 30px;
     color: $white;
     text-align: center;
@@ -451,8 +451,49 @@ nav{
     background-size: cover;
     padding: 80px 0 0;
 }
+.testimonios{
+    .owl-dots{
+        position: absolute;
+        top: 540px;
+        left: 83%;
+        .owl-dot{
+            background: $green;
+            width: 40px;
+            height: 5px;
+        }
+    }
+    .testimonio{
+        background: url('../img/testimonio.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+        min-height: 600px;
+        .texto-testimonio{
+            position: relative;
+            width: 30%;
+            right: -52%;
+            top: 200px;
+            p{
+               color: $white; 
+               font-size: 20px;
+            }
+            h6{
+                color: $white;
+                font-size: 24px;
+                font-weight: $Bold;
+            }
+            span{
+                color:$white;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
 .beneficios-empresas{
     padding: 60px 0;
+    background-image: url('../img/ondas.png') no-repeat;
+    background-size: contain;
+    background-position: center;
     .beneficio{
         .paso{
             text-align: right;
