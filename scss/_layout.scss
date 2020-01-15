@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden;
+}
 
 .owl-one{
     .owl-stage-outer {
@@ -107,8 +109,12 @@ nav{
 }
 
 .owl-carousel{
+    display: flex;
+    flex-direction: column;
+    // overflow-x: hidden;
     .owl-stage-outer {
         width: auto;
+        height: 100vh;
         .owl-stage {
             .owl-item{
                 opacity: 1;
@@ -149,6 +155,17 @@ nav{
             }
         }
     }
+    // .owl-theme{
+        .owl-nav{
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            button{
+                top: 0px;
+                left: 0;
+            }
+        }
+    // }
 }
 
 //Hace que el slider solo tenga una foto de fondo
@@ -184,6 +201,7 @@ nav{
 }
 
 #carousel-movil{
+    height: 105vh;
     #textura{
         position: absolute;
         right: 9vw;
@@ -191,10 +209,10 @@ nav{
         margin-top: 38vh;
         background: linear-gradient(to bottom, #004190, #003e65);
         width: 80vw;
-        height: 22%;
+        height: 25%;
         border-radius: 15px;
     }
-    #movil{
+    .movil{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -358,8 +376,9 @@ nav{
     background-size: contain;
     background-position: center;
     position: relative;
-    margin-top: -150px;
+    margin-top: -27vh;
     margin-bottom: -2px;
+    width: 100vw;
     z-index: 999;
     @media (max-width: 676px) {
         background-size: cover;

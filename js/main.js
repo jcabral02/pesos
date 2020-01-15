@@ -6,7 +6,8 @@ $(document).ready(function(){
       loop:true,
       autoplay:true,
       autoplayTimeout:4000,
-      margin:0
+      margin:0,
+      nav: true
     });
     $(".owl-carousel-2").owlCarousel({
       items:1,
@@ -15,7 +16,8 @@ $(document).ready(function(){
       loop:true,
       autoplay:true,
       autoplayTimeout:4000,
-      margin:0
+      margin:0,
+      // nav: true
     });
   });
   
