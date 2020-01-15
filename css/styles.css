@@ -546,6 +546,9 @@ footer {
     justify-content: space-around;
     text-align: center;
     padding: 1vh; }
+    @media (max-width: 676px) {
+      #pop-in-2 #modal-in-2 {
+        width: 90vw; } }
     #pop-in-2 #modal-in-2 #title {
       width: 100%;
       display: -webkit-box;
@@ -615,6 +618,9 @@ footer {
             flex-direction: column;
     text-align: center;
     padding: 1vh; }
+    @media (max-width: 676px) {
+      #pop-up #modal-up {
+        width: 90vw; } }
     #pop-up #modal-up #titles {
       width: 100%;
       display: -webkit-box;
@@ -707,6 +713,36 @@ footer {
     .owl-carousel .owl-nav button {
       top: 0px;
       left: 0; }
+
+.beneficios-movil-empresas {
+  height: 560px;
+  padding: 0; }
+  .beneficios-movil-empresas h2 {
+    font: Extrabold 44px/90px "Open Sans", sans-serif;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center; }
+    @media (max-width: 676px) {
+      .beneficios-movil-empresas h2 {
+        font: 400 24px "Open Sans", sans-serif; } }
+  .beneficios-movil-empresas p, .beneficios-movil-empresas h6, .beneficios-movil-empresas span {
+    margin-top: 4vh;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    line-height: 1.5; }
+  .beneficios-movil-empresas .owl-stage-outer {
+    width: auto;
+    height: 560px; }
+    @media (max-width: 676px) {
+      .beneficios-movil-empresas .owl-stage-outer {
+        height: 100vh; } }
 
 .beneficios-movil {
   height: 560px;
