@@ -90,9 +90,13 @@
      ========================================================================== */
 
 a{
+  border: 0;
     &:hover{
         text-decoration: none;
     }
+}
+button{
+  border: 0;
 }
 
 ul{
@@ -100,15 +104,146 @@ ul{
     padding: 0;
     margin: 0;
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+.header{
+  position: fixed;
+  background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.09707633053221287) 80%, rgba(0,0,0,0) 100%);
+  top:0;
+  right:0;
+  z-index: 9998;
+  width: 100%;
+  padding: 30px 20px;
+  nav{
+      .main-menu{
+          text-align: right;
+          li{
+              display: inline-block;
+              color: $white;
+          }
+      }
+      .movil-menu{
+          text-align: right;
+          li{
+              display: inline-block;
+              color: $white;
+              button{
+                  cursor: pointer;
+              }
+          }
+      }
+  }
+}
+.header-empresas{
+  @extend .header;
+  background: rgba(0,0,0,0.7);
+  padding: 20px 20px;
+}
+nav{
+  .main-menu{
+      text-align: right;
+      li{
+          display: inline-block;
+          color: $white;
+      }
+  }
+}
+
+footer{
+  background: linear-gradient(180deg, rgba(57,169,53,1) 0%, rgba(5,108,164,1) 100%);
+  color: $white;
+  position: relative;
+  margin-top: -80px;
+  min-height: 360px;
+  clear: both;
+  padding-top: 60px;
+  z-index: -2;
+  height: 500px;
+  @media (max-width: 676px) {
+    height: auto;
+    z-index: 800;
+}
+  .footer-section{
+      @media (max-width: 676px) {
+          border-bottom: 1px solid rgba(255,255,255, 0.5);
+      }
+  }
+  .footer-content{
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    @media (max-width: 676px) {
+      position: relative;
+      z-index: 800;
+      bottom: 0;
+  }
+    .copyright{
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      color: $white;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      position: relative;
+      bottom: 0;
+      @media (max-width: 676px) {
+          bottom: 0
+      }
+      p{
+          color: $white;
+          opacity: 80%;
+      }
+  }
+  }
+  
+  p, h3, h4{
+      font-size: 16px !important;
+  }
+  h4{
+      font-weight: $Semibold;
+      opacity: 80%;
+  }
+  a{
+      color: $white;
+  }
+  .menu-footer{
+      li{
+          display: inline-block;
+          padding: 0 10px;
+          text-align: center;
+          a{
+              color: $white;
+              opacity: 80%;
+          }
+      }
+  }
+  .social{
+      li{
+          display: inline-block;
+          font-size: 20px;
+          margin-right: 20px; 
+          color: $white;
+          a{
+              color: $white;
+          }
+      }
+  }
+}
+
+
+//Elements//
+
 .divider{
   width: 80%;
   border: 0.5px solid #D6D6D6;
   margin: 0 auto;
 }
-//Buttons
+
+
+
+//Buttons//
 
 .rounded-button{
     border-radius: 24px;
@@ -221,6 +356,7 @@ body{
       }
   }
 }
+
 
 /* ==========================================================================
    Helper classes

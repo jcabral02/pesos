@@ -23,6 +23,7 @@
 
 
   <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -282,7 +283,7 @@
 </section>
 
 <footer>
-  <div class="container-fluid">
+  <div class="container-fluid footer-content">
     <section class="row py-lg-5">
       <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
         <img class="d-block" src="img/logo-epesos.svg" alt="">
@@ -349,23 +350,7 @@
   <script src="js/main.js"></script>
 
   <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        items:1,
-        lazyLoad:true,
-        loop:true,
-        autoplay:true,
-        margin:0
-      });
-      $(".owl-carousel-2").owlCarousel({
-        items:1,
-        lazyLoad:true,
-        loop:true,
-        autoplay:true,
-        margin:0
-      });
-    });
-    
+   
     let btn_sign = document.getElementsByClassName('sign-in');
     let pop_sign = document.getElementById('pop-in');
     let pop_sign_2 = document.getElementById('pop-in-2');
