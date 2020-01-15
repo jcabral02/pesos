@@ -275,7 +275,8 @@
     </div>
 </section>
 
-<section class="bg-ice-blue testimonios pt-lg-5">
+<!-- carousel escritorio -->
+<section class="bg-ice-blue testimonios pt-lg-5 d-none d-md-block d-lg-none d-xl-block d-lg-block d-xl-none d-sm-block d-md-none">
     <div class="owl-two owl-carousel owl-theme">
         <div class="item">
             <div class="testimonio">
@@ -297,6 +298,25 @@
         </div>
     </div>
 </section>
+
+<!-- carousel movil -->
+<div id="carousel-movil" class="d-block d-sm-none">
+  <div style="position: absolute;right: 8vw;display: flex;margin-top: 38vh;background: linear-gradient(to bottom, #004190, #003e65);width: 85vw;height: 60%;border-radius: 15px;" class="d-block d-sm-none ">
+  </div>
+  <section class="owl-carousel beneficios-movil">
+    <div id="movil" class="w-100 pt-lg-5 mt-lg-5">
+      <div style="width:65%!important;" class="w-50 mr-lg-2">
+        <h1 style="color: cadetblue;" class="my-lg-6 pt-lg-6">Testimonios</h1>
+        <img src="img/testimonios.png" alt="testimonio">
+      </div>
+      <div style="width: 75%!important;" class="w-50 py-lg-5 pl-lg-2">
+        <p>Tenemos una cultura de no endeudar a nuestros empleados y ePesos nos permite ayudarlos sin el riesgo que se endeuden. ePesos ha bajado nuestra rotación laboral, antes contratábamos 25 a 30 personas cada semana, ahora solo contratamos 5”</p>
+        <h6>- Jesús</h6>
+        <p>Director RH - Hamaden</p>              
+      </div>
+    </div>
+  </section>
+</div>
 
 <section class="clientes">
     <div class="container">
@@ -483,43 +503,43 @@
   <script>
 
     // Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('footer').outerHeight();
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('footer').outerHeight();
 
-$(window).scroll(function(event) {
-  didScroll = true;
-});
+    $(window).scroll(function(event) {
+      didScroll = true;
+    });
 
-setInterval(function() {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
+    setInterval(function() {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
 
-function hasScrolled() {
-  var st = $(this).scrollTop();
+    function hasScrolled() {
+      var st = $(this).scrollTop();
 
-  // Make sure they scroll more than delta
-  if (Math.abs(lastScrollTop - st) <= delta)
-    return;
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
+        return;
 
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
-    $('footer').removeClass('nav-down').addClass('nav-up');
-  } else {
-    // Scroll Up
-    if (st + $(window).height() < $(document).height()) {
-      $('footer').removeClass('nav-up').addClass('nav-down');
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('footer').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $('footer').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+
+      lastScrollTop = st;
     }
-  }
-
-  lastScrollTop = st;
-}
 
     
     let btn_sign = document.getElementsByClassName('sign-in');
