@@ -293,6 +293,51 @@
         }
     // }
 }
+.carousel-movil-desktop{
+    background: url(../img/textura-beneficios.png) no-repeat;
+    background-size: cover;
+    background-position: -330px center;
+    height: 800px;
+
+    .beneficios-movil{
+        height:560px;
+        padding: 0;
+    
+        h2{
+            font: Extrabold 44px/90px $Open_Sans;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p, h6, span{
+            margin-top: 4vh;
+            text-align: left;
+            font-size: 16px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            opacity: 1;
+            line-height: 1.5;
+        }
+        .item-beneficios{
+            width: 80%;
+                margin: 0 auto;
+            img{
+                width: 80%;
+            }
+            p{
+                margin: 0 0 0 10%;
+            }
+        }
+        .owl-stage-outer {
+            width: auto;
+            height: 560px;
+            @media (max-width: 676px) {
+                height: 100vh;
+            }
+        }
+    }
+
+}
 
 .beneficios-movil-empresas{
     height:560px;
@@ -323,35 +368,6 @@
     }
 }
 
-
-.beneficios-movil{
-    height:560px;
-    padding: 0;
-    h2{
-        font: Extrabold 44px/90px $Open_Sans;
-        @media (max-width: 676px) {
-            font: $Regular 24px $Open_Sans;
-        }display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    p, h6, span{
-        margin-top: 4vh;
-        text-align: left;
-        font-size: 16px;
-        letter-spacing: 0;
-        color: #FFFFFF;
-        opacity: 1;
-        line-height: 1.5;
-    }
-    .owl-stage-outer {
-        width: auto;
-        height: 560px;
-        @media (max-width: 676px) {
-            height: 100vh;
-        }
-    }
-}
 
 
 //Hace que el slider solo tenga una foto de fondo
