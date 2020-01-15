@@ -100,7 +100,7 @@
 
     </script>
 
-<section class="owl-carousel">
+<section class="owl-carousel slider-basico">
   <div class="container-fluid slide-1">
     <div class="row no-gutter">
       <div class="col-12 col-lg-6 offset-lg-3 text-center"> 
@@ -350,6 +350,19 @@
   <script src="js/main.js"></script>
 
   <script>
+
+    $(function() {
+        var header = $(".header");
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+        
+            if (scroll >= 200) {
+                header.removeClass('header').addClass("header-alt");
+            } else {
+                header.removeClass("header-alt").addClass('header');
+            }
+        });
+    });
    
     let btn_sign = document.getElementsByClassName('sign-in');
     let pop_sign = document.getElementById('pop-in');

@@ -41,18 +41,25 @@
                     width: 100%;
                 }
                 .slide-1{
-                    background: url('../img/slider1.jpg') no-repeat;
-                    background-size: cover !important;
-                    position: relative;
+                    // background: url('../img/slider1.jpg') no-repeat;
+                    // background-size: cover !important;
+                    // position: relative;
                     height: 800px;
                 }
                 .slide-2{
                     @extend .slide-1;
-                    background: url('../img/slider2.jpg') no-repeat;
+                    // background: url('../img/slider2.jpg') no-repeat;
                 }
             }
         }
     }
+}
+
+//Hace que el slider solo tenga una foto de fondo
+.slider-basico{
+    background: url('../img/slider1.jpg') no-repeat;
+    background-size: cover !important;
+    position: relative;
 }
 
 .beneficios{
@@ -180,8 +187,14 @@
     background: linear-gradient(74deg, rgba(42,152,84,1) 0%, rgba(5,108,164,1) 100%);
     color: $white;
     padding: 80px 0;
+    @media (max-width: 676px) {
+        padding: 40px 0;
+    }
     h2{
         color: $white;
+        @media (max-width: 676px) {
+            font-size: 30px;
+        }
     }
     a{
         color: $dark-blue !important;
@@ -237,7 +250,7 @@
     background-size: contain;
     background-position: center;
     position: relative;
-    margin-top: -75px;
+    margin-top: -150px;
     margin-bottom: -2px;
     z-index: 999;
     @media (max-width: 676px) {
