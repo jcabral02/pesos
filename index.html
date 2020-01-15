@@ -110,7 +110,7 @@
           <a  class="rounded-button-white d-inline-block" href="#">Conóce más de ePesos</a>
           <a href="#" class="d-inline-block">
             <img style="width:50px"; src="img/play.svg" class="ml-lg-4 d-inline-block" alt="">
-            <p class="d-inline-block text-white">Ver video</p>
+            <p class="d-inline-block text-white mt-lg-0 mt-4">Ver video</p>
           </a>
         </div>   
       </div>
@@ -350,6 +350,27 @@
   <script src="js/main.js"></script>
 
   <script>
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items:1,
+      lazyLoad:true,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:4000,
+      margin:0,
+    });
+    $(".owl-carousel-2").owlCarousel({
+      items:1,
+      lazyLoad:true,
+      nav: true,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:4000,
+      margin:0,
+      // nav: true
+    });
+  });
    
     let btn_sign = document.getElementsByClassName('sign-in');
     let pop_sign = document.getElementById('pop-in');

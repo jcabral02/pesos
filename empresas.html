@@ -99,7 +99,7 @@
   
       </script>
 
-<section id="desktop" class="owl-two owl-carousel owl-theme">
+<section id="desktop" class="owl-one owl-carousel owl-theme slider-basico">
   <div class="container-fluid slide-1">
     <div class="row no-gutter">
       <div class="col-12 col-lg-8 offset-lg-2 text-center"> 
@@ -109,7 +109,7 @@
           <a  class="rounded-button-white d-inline-block" href="#">Conóce más de ePesos</a>
           <a href="#" class="d-inline-block">
             <img style="width:50px"; src="img/play.svg" class="ml-lg-4 d-inline-block" alt="">
-            <p class="d-inline-block text-white">Ver video</p>
+            <p class="d-inline-block text-white mt-lg-0 mt-4">Ver video</p>
           </a>
         </div>   
       </div>
@@ -409,10 +409,10 @@
                     </div>
                 </div>
             </div>
-            <div class="divider my-5"></div>
+            <div class="divider my-lg-5 mt-5"></div>
         </div>
     
-        <div class="row pb-lg-5">
+        <div class="row pb-5">
             <div class="col-12 col-lg-8 offset-lg-2 text-center pb-lg-5">
                 <p>Contamos con un aliado comercial, experto en el bienestar, y líder mundial en prestaciones como vales de despensa.</p>
                 <img src="img/sivale.png" alt="">
@@ -512,6 +512,28 @@
   <script src="js/main.js"></script>
 
   <script>
+    $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items:1,
+      lazyLoad:true,
+      nav: true,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:4000,
+      margin:0,
+      nav: true
+    });
+    $(".owl-carousel-2").owlCarousel({
+      items:1,
+      lazyLoad:true,
+      nav: true,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:4000,
+      margin:0,
+      // nav: true
+    });
+  });
 
     // Hide Header on on scroll down
     var didScroll;

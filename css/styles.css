@@ -664,6 +664,85 @@ footer {
         color: #588a91;
         font-size: 14px; }
 
+.owl-carousel {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .owl-carousel .owl-stage-outer {
+    width: auto; }
+    .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+      opacity: 1;
+      position: relative;
+      margin-right: 0 !important; }
+      .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
+        font: 400 20px/30px "Open Sans", sans-serif;
+        color: #FFFFFF; }
+        @media (max-width: 676px) {
+          .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
+            font: 400 16px "Open Sans", sans-serif; } }
+      .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
+        position: relative;
+        z-index: 9999;
+        top: 50%;
+        left: 0; }
+      .owl-carousel .owl-stage-outer .owl-stage .owl-item .overlay {
+        position: absolute;
+        height: 800px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#218d69), to(rgba(5, 108, 164, 0.8)));
+        background: linear-gradient(180deg, #218d69 0%, rgba(5, 108, 164, 0.8) 100%);
+        z-index: 888;
+        top: 0;
+        left: 0;
+        width: 100%; }
+      .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
+        height: 800px; }
+  .owl-carousel .owl-nav {
+    display: -webkit-box;
+    display: flex;
+    width: 100vw;
+    -webkit-box-pack: center;
+            justify-content: center; }
+    .owl-carousel .owl-nav button {
+      top: 0px;
+      left: 0; }
+
+.beneficios-movil {
+  height: 560px;
+  padding: 0; }
+  .beneficios-movil h2 {
+    font: Extrabold 44px/90px "Open Sans", sans-serif;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center; }
+    @media (max-width: 676px) {
+      .beneficios-movil h2 {
+        font: 400 24px "Open Sans", sans-serif; } }
+  .beneficios-movil p, .beneficios-movil h6, .beneficios-movil span {
+    margin-top: 4vh;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    line-height: 1.5; }
+  .beneficios-movil .owl-stage-outer {
+    width: auto;
+    height: 560px; }
+    @media (max-width: 676px) {
+      .beneficios-movil .owl-stage-outer {
+        height: 100vh; } }
+
+.slider-basico {
+  background: url("../img/slider1.jpg") no-repeat;
+  background-size: cover !important;
+  position: relative; }
+
 body {
   overflow-x: hidden; }
 
@@ -767,56 +846,6 @@ nav .main-menu {
           width: 40vw;
           font-size: 14px; }
 
-.owl-carousel {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
-  .owl-carousel .owl-stage-outer {
-    width: auto;
-    height: 100vh; }
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item {
-      opacity: 1;
-      position: relative;
-      margin-right: 0 !important; }
-      .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
-        font: 400 20px/30px "Open Sans", sans-serif;
-        color: #FFFFFF; }
-        @media (max-width: 676px) {
-          .owl-carousel .owl-stage-outer .owl-stage .owl-item .description {
-            font: 400 16px "Open Sans", sans-serif; } }
-      .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
-        position: relative;
-        z-index: 9999;
-        top: 50%;
-        left: 0; }
-      .owl-carousel .owl-stage-outer .owl-stage .owl-item .overlay {
-        position: absolute;
-        height: 800px;
-        background: -webkit-gradient(linear, left top, left bottom, from(#218d69), to(rgba(5, 108, 164, 0.8)));
-        background: linear-gradient(180deg, #218d69 0%, rgba(5, 108, 164, 0.8) 100%);
-        z-index: 888;
-        top: 0;
-        left: 0;
-        width: 100%; }
-      .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
-        height: 800px; }
-  .owl-carousel .owl-nav {
-    display: -webkit-box;
-    display: flex;
-    width: 100vw;
-    -webkit-box-pack: center;
-            justify-content: center; }
-    .owl-carousel .owl-nav button {
-      top: 0px;
-      left: 0; }
-
-.slider-basico {
-  background: url("../img/slider1.jpg") no-repeat;
-  background-size: cover !important;
-  position: relative; }
-
 .beneficios {
   background: url("../img/textura-beneficios.png") no-repeat;
   background-size: cover;
@@ -870,30 +899,6 @@ nav .main-menu {
         height: 30vh;
         -webkit-transform: scale(1.5);
                 transform: scale(1.5); }
-
-.beneficios-movil {
-  height: 100vh;
-  padding: 0; }
-  .beneficios-movil h2 {
-    font: Extrabold 44px/90px "Open Sans", sans-serif;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center; }
-    @media (max-width: 676px) {
-      .beneficios-movil h2 {
-        font: 400 24px "Open Sans", sans-serif; } }
-  .beneficios-movil p, .beneficios-movil h6, .beneficios-movil span {
-    margin-top: 4vh;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    opacity: 1;
-    line-height: 1.5; }
 
 .main {
   position: relative;

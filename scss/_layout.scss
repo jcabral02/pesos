@@ -108,72 +108,7 @@ nav{
     }
 }
 
-.owl-carousel{
-    display: flex;
-    flex-direction: column;
-    // overflow-x: hidden;
-    .owl-stage-outer {
-        width: auto;
-        height: 100vh;
-        .owl-stage {
-            .owl-item{
-                opacity: 1;
-                position: relative;
-                margin-right: 0 !important;
-                .description{
-                    font: $Regular 20px/30px $Open_Sans;
-                    color: #FFFFFF;
-                    @media (max-width: 676px) {
-                        font: $Regular 16px $Open_Sans;
-                    }
-                }
-                .content-slider{
-                    position: relative;
-                    z-index: 9999;
-                    top: 50%;
-                    left: 0;
-                }
-                .overlay{
-                    position: absolute;
-                    height: 800px;
-                    background: linear-gradient(180deg, rgba(33,141,105,1) 0%, rgba(5,108,164,0.8) 100%);
-                    z-index: 888;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                }
-                .slide-1{
-                    // background: url('../img/slider1.jpg') no-repeat;
-                    // background-size: cover !important;
-                    // position: relative;
-                    height: 800px;
-                }
-                .slide-2{
-                    @extend .slide-1;
-                    // background: url('../img/slider2.jpg') no-repeat;
-                }
-            }
-        }
-    }
-    // .owl-theme{
-        .owl-nav{
-            display: flex;
-            width: 100vw;
-            justify-content: center;
-            button{
-                top: 0px;
-                left: 0;
-            }
-        }
-    // }
-}
 
-//Hace que el slider solo tenga una foto de fondo
-.slider-basico{
-    background: url('../img/slider1.jpg') no-repeat;
-    background-size: cover !important;
-    position: relative;
-}
 
 .beneficios{
     background: url('../img/textura-beneficios.png') no-repeat;
@@ -230,27 +165,6 @@ nav{
     }
 }
 
-.beneficios-movil{
-    height:100vh;
-    padding: 0;
-    h2{
-        font: Extrabold 44px/90px $Open_Sans;
-        @media (max-width: 676px) {
-            font: $Regular 24px $Open_Sans;
-        }display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    p, h6, span{
-        margin-top: 4vh;
-        text-align: left;
-        font-size: 16px;
-        letter-spacing: 0;
-        color: #FFFFFF;
-        opacity: 1;
-        line-height: 1.5;
-    }
-}
 
 
 .main{
