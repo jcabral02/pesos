@@ -109,6 +109,14 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+section{
+  z-index: 999;
+}
+
+.modal{
+  z-index: 9999;
+}
+
 .header{
   position: fixed;
   background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.09707633053221287) 80%, rgba(0,0,0,0) 100%);
@@ -257,10 +265,7 @@ footer{
   margin: 0 auto;
 }
 
-
-
 //Buttons//
-
 .rounded-button{
     border-radius: 24px;
     opacity: 1;

@@ -7,7 +7,7 @@
     top: 0vh;
     background-color:rgba(0,0,0,0.75);
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     justify-content: flex-end;
     align-items: flex-start;
     #modal-in{
@@ -232,8 +232,14 @@
     }
 }
 
-// Carousel
+.priv{
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+}
 
+// Carousel
 .owl-carousel{
     display: flex;
     flex-direction: column;
@@ -282,15 +288,6 @@
         }
     }
     // .owl-theme{
-        .owl-nav{
-            display: flex;
-            width: 100vw;
-            justify-content: center;
-            button{
-                top: 0px;
-                left: 0;
-            }
-        }
     // }
 }
 .carousel-movil-desktop{
@@ -368,11 +365,30 @@
     }
 }
 
-
-
 //Hace que el slider solo tenga una foto de fondo
 .slider-basico{
     background: url('../img/slider1.jpg') no-repeat;
     background-size: cover !important;
     position: relative;
+}
+
+.owl-carousel{
+    .owl-nav{
+        display: none;
+        width: 100vw;
+        justify-content: center;
+        margin-bottom: 1vh;
+        button{
+            top: 0px;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .owl-carousel{
+        .owl-nav{
+            display: flex;
+        }
+    }
 }

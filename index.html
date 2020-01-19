@@ -6,13 +6,15 @@
   <title>ePesos</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- Bootstrap4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   
   <!-- Font Awesome (icons) -->
   <script src="https://kit.fontawesome.com/18516ef2f3.js" crossorigin="anonymous"></script>
@@ -21,10 +23,18 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">  
 
-
+  <!-- normalize y estilos -->
   <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- archivos javascript -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/main.js"></script>
 
 </head>
 
@@ -34,74 +44,59 @@
   <![endif]-->
 
   <!-- Content ePesos-->
-    <header class="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 col-lg-3">
-            <div class="logo">
-              <a href="index.html"><img class="d-block d-sm-none" src="img/logomovil.svg" alt=""></a>
-              <a href="index.html"><img class="d-none d-md-block d-lg-none d-xl-block d-lg-block d-xl-none d-sm-block d-md-none" src="img/logo-epesos.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-9">
-            <nav>
-              <!-- menu desktop -->
-              <ul class="main-menu d-none d-lg-block d-xl-none d-xl-block d-none d-md-block d-lg-none">
-                  <li> <a class="text-white mr-lg-3" href="empresas.html">Empresas</a> </li>
-                  <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
-                  <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
-              </ul>
-              <!-- menu movil -->
-              <ul class="movil-menu d-none d-sm-block d-md-none d-block d-sm-none">
-                  <li><button id="btn_menu" class="text-white mr-lg-3" style="border: none; background-color: transparent;"><img src="./img/icono-menumovil.svg" alt=""></button></li>
-              </ul>
-            </nav>
-          </div>
+<header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 col-lg-3">
+        <div class="logo">
+          <a href="index.html"><img class="d-block d-sm-none" src="img/logomovil.svg" alt=""></a>
+          <a href="index.html"><img class="d-none d-md-block d-lg-none d-xl-block d-lg-block d-xl-none d-sm-block d-md-none" src="img/logo-epesos.svg" alt=""></a>
         </div>
       </div>
-    </header>
-
-    <div id="menu">
-      <section class="top">
-        <div>
-          <img src="img/logo-movil.PNG" alt="logo">
-          <i class="fas fa-times" id="btn_close"></i>
-        </div>
-      </section>
-      <section class="options">
-        <ul>
-          <li><a href="#">Inicio</a><i class="fas fa-chevron-right"></i></li>
-          <li><a href="empresas.html">Empresas</a><i class="fas fa-chevron-right"></i></li>
-        </ul>
-      </section>
-      <section class="sesions">
-        <div id="account">
-          <div id="sign-in">
-            <span>Accede a tu cuenta</span>
-            <button style="border: none;" class="rounded-button-white sign-in">Iniciar Sesion</button>
-          </div>
-          <div id="sign-up">
-            <span>¿No tienes cuenta?</span>
-            <button class="outline-button register">Registrate</button>
-          </div>
-        </div>
-      </section>
+      <div class="col-6 col-lg-9">
+        <nav>
+          <!-- menu desktop -->
+          <ul class="main-menu d-none d-lg-block d-xl-none d-xl-block d-none d-md-block d-lg-none">
+              <li> <a class="text-white mr-lg-3" href="empresas.html">Empresas</a> </li>
+              <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
+              <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
+          </ul>
+          <!-- menu movil -->
+          <ul class="movil-menu d-none d-sm-block d-md-none d-block d-sm-none">
+              <li><button id="btn_menu" class="text-white mr-lg-3" style="border: none; background-color: transparent;"><img src="./img/icono-menumovil.svg" alt=""></button></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </div>
+</header>
 
-    <script>
-      var menu = document.getElementById('menu');
-      var btnMenu = document.getElementById('btn_menu');
-      var btnClose = document.getElementById('btn_close');
-
-      btnMenu.addEventListener('click', function(){
-        menu.style.width = "100vw";
-      });
-
-      btnClose.addEventListener('click', function(){
-        menu.style.width = "0";
-      })
-
-    </script>
+<div id="menu">
+  <section class="top">
+    <div>
+      <img src="img/logo-movil.PNG" alt="logo">
+      <i class="fas fa-times" id="btn_close"></i>
+    </div>
+  </section>
+  <section class="options">
+    <ul>
+      <li><a href="#">Inicio</a><i class="fas fa-chevron-right"></i></li>
+      <li><a href="empresas.html">Empresas</a><i class="fas fa-chevron-right"></i></li>
+    </ul>
+  </section>
+  <section class="sesions">
+    <div id="account">
+      <div>
+        <span>Accede a tu cuenta</span>
+        <button style="border: none;" class="rounded-button-white">Iniciar Sesion</button>
+      </div>
+      <div id="sign-up">
+        <span>¿No tienes cuenta?</span>
+        <button class="outline-button register">Registrate</button>
+      </div>
+    </div>
+  </section>
+</div>
 
 <section class="owl-carousel slider-basico">
   <div class="container-fluid slide-1">
@@ -137,13 +132,14 @@
   </div>
 </section>
 
+<!-- ***********************Modals de inicio de sesion y registro************************************ -->
 <section id="pop-in">
   <div id="modal-in">
     <div class="title">
       <h5>Entra aqu&iacute; con tu cuenta de Epesos</h5>
     </div>
     <form action="">
-      <input class="phone" type="text" placeholder="Numero de Celular">
+      <input id="phone" type="text" placeholder="Numero de Celular">
       <input id="pass" type="password" placeholder="Contrase&ntilde;a"><br>
       <input type="submit" value="Entrar">
     </form>
@@ -154,7 +150,6 @@
 </section>
 
 <section id="pop-in-2">
-
   <div id="modal-in-2">
     <i class="fas fa-times-circle" id="close"></i>
     <div id="title">
@@ -189,6 +184,49 @@
     </div>
   </div>
 </section>
+
+<!-- *******************Modal aviso de privacidad y terminos y condiciones********************* -->
+<div class="modal fade mt-2" id="avisoPrivacidad" tabindex="-1" role="dialog" aria-labelledby="avisoPrivacidad" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="avisoPrivacidad">Aviso de Privacidad</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a aliquet metus, ut blandit risus. Fusce eget urna lacus. Ut ultrices sit amet nunc vitae finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vestibulum nunc est, sed efficitur lorem elementum eget. Duis sit amet ligula elit. Maecenas vitae diam pharetra, condimentum turpis eu, volutpat mi. Donec a turpis magna. Etiam pretium arcu urna, in sagittis ex finibus eget. Donec commodo ante ac maximus eleifend. Duis faucibus quam risus. Nullam posuere est vitae justo molestie condimentum. Fusce sapien velit, ornare eget vehicula ut, cursus in odio. Donec eu hendrerit urna, in euismod eros. Donec non ornare lacus. Sed lorem lectus, finibus sed eleifend in, hendrerit pulvinar enim.
+
+        Aenean ultricies, mauris vel posuere imperdiet, augue felis sodales purus, pretium commodo augue risus et nisl. Nullam nec arcu sollicitudin, pretium neque ac, rutrum dui. Etiam eu mi quis magna sollicitudin ultricies sit amet congue enim. Nunc turpis est, dictum id mauris ut, ultricies iaculis ligula. Donec vitae tristique leo. In hac habitasse platea dictumst. Sed viverra pharetra diam vel euismod. Aliquam vulputate ullamcorper nibh sed aliquet. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-2" id="terminosCondiciones" tabindex="-1" role="dialog" aria-labelledby="terminosCondiciones" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="terminosCondiciones">Terminos y condiciones</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a aliquet metus, ut blandit risus. Fusce eget urna lacus. Ut ultrices sit amet nunc vitae finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vestibulum nunc est, sed efficitur lorem elementum eget. Duis sit amet ligula elit. Maecenas vitae diam pharetra, condimentum turpis eu, volutpat mi. Donec a turpis magna. Etiam pretium arcu urna, in sagittis ex finibus eget. Donec commodo ante ac maximus eleifend. Duis faucibus quam risus. Nullam posuere est vitae justo molestie condimentum. Fusce sapien velit, ornare eget vehicula ut, cursus in odio. Donec eu hendrerit urna, in euismod eros. Donec non ornare lacus. Sed lorem lectus, finibus sed eleifend in, hendrerit pulvinar enim.
+
+        Aenean ultricies, mauris vel posuere imperdiet, augue felis sodales purus, pretium commodo augue risus et nisl. Nullam nec arcu sollicitudin, pretium neque ac, rutrum dui. Etiam eu mi quis magna sollicitudin ultricies sit amet congue enim. Nunc turpis est, dictum id mauris ut, ultricies iaculis ligula. Donec vitae tristique leo. In hac habitasse platea dictumst. Sed viverra pharetra diam vel euismod. Aliquam vulputate ullamcorper nibh sed aliquet. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section role="main" class="main">
   <div class="container-fluid">
@@ -254,25 +292,37 @@
         </section>
 
         <!-- carousel movil -->
-        <div id="carousel-movil" class="d-block d-sm-none carousel-movil-desktop mt-5">
-          <section class="owl-carousel beneficios-movil pt-3">
-            <div id="movil" class="w-100 pt-3">
-              <h2 class="text-center text-white">Acerca de ePesos</h2>
-              <div class="item-beneficios">
+        <div id="carousel-movil-index" class="d-block d-sm-none ">
+          <div class="textura" class="d-block d-sm-none ">
+          </div>
+          <section class="owl-carousel beneficios-movil">
+            <div id="movil" class="w-100 pt-lg-5 mt-lg-5">
+              <div style="width: 70%!important;" class="w-50 mr-lg-2">
+                <h1 class="my-lg-5 pt-lg-5">Acerca de ePesos</h1>
                 <img class="img-fluid" src="img/beneficio1.png" alt="">
-                <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
               </div>
-              
+              <div style="width: 58%!important;" class="w-50 py-lg-5 pl-lg-2">
+                  <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
+              </div>
+            </div>
+            
+            <div id="movil" class="w-100 pt-lg-5 mt-lg-5">
+              <div style="width: 70%!important;" class="w-50 mr-lg-2">
+                <h1 class="my-lg-5 pt-lg-5">Acerca de ePesos</h1>
+                <img class="img-fluid" src="img/beneficio1.png" alt="">
+              </div>
+              <div style="width: 58%!important;" class="w-50 py-lg-5 pl-lg-2">
+                  <p>ePesos nació en 2014 como un proyecto digital de una microfinanciera mexicana, Quantum Capital, para brindar servicios financieros a la población más excluida por el sistema bancario en México.</p>                   
+              </div>
             </div>
           </section>
         </div>
 
-        <!--  -->
         <section class="container-fluid py-4 conoce-beneficios">
           <div class="row p-lg-0">
             <div class="col-12 text-center col-lg-8 offset-lg-2 py-lg-5">
               <h2>¡Conoce todos los beneficios que ePesos tiene para tu empresa!</h2>
-              <button class="rounded-button-gradient mt-lg-5">Agenda una citaaaaaaa</button>
+              <button class="rounded-button-gradient mt-lg-5 register">Agenda una cita</button>
             </div>
           </div>
         </section>
@@ -302,7 +352,6 @@
         <div class="mb-4">
           <a href="mailto:hola@epesos.com"><i class="fas fa-envelope mr-2"></i>hola@epesos.com</a>
         </div class="mb-4">
-        
         
       </div>
       <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
@@ -342,115 +391,18 @@
       <ul class="menu-footer text-lg-right text-left">
           <li class="py-2 py-lg-0"> <a href="http://portal.epesos.com/">Portal administrativo ePesos</a> <span class="ml-lg-4 d-lg-inline-block d-none">|</span class="ml-lg-4"></li class="py-2 py-lg-0">
           <li class="py-2 py-lg-0"> <a href="faqs.html">Preguntas frecuentes </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
-          <li class="py-2 py-lg-0"> <a href="aviso-privacidad">Aviso de Privacidad </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
-          <li class="py-2 py-lg-0"> <a href="terminos">Términos y Condiciones</a></li>
+          <li class="py-2 py-lg-0"> 
+            <button data-toggle="modal" data-target="#avisoPrivacidad" class="priv">Aviso de Privacidad </button>
+            <span class="ml-lg-4 d-lg-inline-block d-none">|</span>
+          </li>
+          <li class="py-2 py-lg-0"> 
+            <button class="priv" data-toggle="modal" data-target="#terminosCondiciones">Términos y Condiciones</button>
+          </li>
       </ul>
   </div>
   </section>
   </div>
 </footer>
-  
-
-
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/main.js"></script>
-
-  <script>
-
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      items:1,
-      lazyLoad:true,
-      loop:true,
-      autoplay:true,
-      autoplayTimeout:4000,
-      margin:0,
-    });
-    $(".owl-carousel-2").owlCarousel({
-      items:1,
-      lazyLoad:true,
-      nav: true,
-      loop:true,
-      autoplay:true,
-      autoplayTimeout:4000,
-      margin:0,
-      // nav: true
-    });
-  });
-   
-    let btn_sign = document.getElementsByClassName('sign-in');
-    let pop_sign = document.getElementById('pop-in');
-    let pop_sign_2 = document.getElementById('pop-in-2');
-    let modal_sign = document.getElementById('modal-in');
-    let modal_sign_2 = document.getElementById('modal-in-2');
-    let phone = document.getElementsByClassName('phone');
-    let btn_close = document.getElementById('close');
-
-    function close(){
-      pop_sign.style.display = 'none';
-      btn_sign[0].style.background = 'transparent';
-    };
-
-    // modal header
-    btn_sign[0].addEventListener('click', function(){
-      pop_sign.style.display = 'flex';
-      phone[0].focus();
-      btn_sign[0].style.background = 'green';
-    });
-
-    pop_sign.addEventListener('click', close);
-
-    modal_sign.addEventListener('mouseover', function(){
-      pop_sign.removeEventListener('click', close);
-    });
-
-    modal_sign.addEventListener('mouseout', function(){
-      pop_sign.addEventListener('click', close);
-    });
-
-    // modal footer
-
-    function close2(){
-      pop_sign_2.style.display = 'none';
-    };
-
-    btn_sign[1].addEventListener('click', function(){
-      pop_sign_2.style.display = 'flex';
-      phone[1].focus();
-    });
-
-    btn_close.addEventListener('click', close2);
-
-    pop_sign_2.addEventListener('click', close2);
-
-    // modal register
-
-    let btn_up = document.getElementsByClassName('register');
-    let pop_up = document.getElementById('pop-up');
-    let modal_up = document.getElementById('modal-up');
-    let name = document.getElementById('names');
-    let close_up = document.getElementById('close-up');
-
-    for(let i=0; btn_up.length>i; i++){
-      btn_up[i].addEventListener('click', function(){
-        pop_up.style.display = 'flex';
-        name.focus();
-      })
-    }
-
-    close_up.addEventListener('click', function(){
-      pop_up.style.display = 'none';
-    })
-
-    //modal politicas privacidad
-
-
-
-  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
