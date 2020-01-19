@@ -124,6 +124,10 @@ body{
           li{
               display: inline-block;
               color: $white;
+              .active{
+                border-bottom: 2px solid #39A935;
+                padding-bottom: 2px;
+              }
           }
       }
       .movil-menu{
@@ -141,7 +145,8 @@ body{
 .header-alt{
   @extend .header;
   background: rgba(0,0,0,0.7);
-  padding: 20px 20px;
+  //Ajuste alto de header
+  padding: 12px 20px;
 }
 nav{
   .main-menu{
@@ -154,14 +159,15 @@ nav{
 }
 
 footer{
-  background: linear-gradient(180deg, rgba(57,169,53,1) 0%, rgba(5,108,164,1) 100%);
+  //Ajuste gradiante footer
+  background: linear-gradient(180deg, rgba(20,142,64,1) 0%, rgba(8,115,145,1) 100%);
   color: $white;
   position: relative;
   margin-top: -80px;
   min-height: 360px;
   clear: both;
   padding-top: 60px;
-  z-index: -2;
+  z-index: 0;
   height: 500px;
   @media (max-width: 676px) {
     height: auto;
@@ -174,7 +180,7 @@ footer{
   }
   .footer-content{
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     bottom: 0;
     @media (max-width: 676px) {
       position: relative;
@@ -195,6 +201,7 @@ footer{
       p{
           color: $white;
           opacity: 80%;
+          font-size: 14px;
       }
   }
   }
@@ -217,6 +224,10 @@ footer{
           a{
               color: $white;
               opacity: 80%;
+              font-size: 14px;
+          }
+          p{
+            font-size: 14px;
           }
       }
   }
@@ -226,6 +237,10 @@ footer{
           font-size: 20px;
           margin-right: 20px; 
           color: $white;
+          @media (max-width: 676px) {
+            font-size: 35px;
+            margin-right: 25%; 
+        }
           a{
               color: $white;
           }
@@ -262,13 +277,17 @@ footer{
 }
 .rounded-button-gradient{
     @extend .rounded-button;
-    background: linear-gradient(180deg, rgba(57,169,53, 1) 0%, rgba(5,108,164, 1) 100%);
+    //Ajuste gradiante botones
+    background: linear-gradient(180deg, rgba(46,165,54,1) 0%, rgba(13,132,120,1) 100%);
     color: $white;
 }
 .rounded-button-blue{
     @extend .rounded-button;
     background: $dark-blue 0% 0% no-repeat padding-box;
     color: $white;
+    &:hover{
+      color: $white;
+    }
 }
 .outline-button{
     @extend .rounded-button;

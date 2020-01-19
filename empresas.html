@@ -46,7 +46,7 @@
             <nav>
                 <!-- menu desktop -->
                 <ul class="main-menu d-none d-lg-block d-xl-none d-xl-block d-none d-md-block d-lg-none">
-                    <li> <a class="text-white mr-lg-3" href="empresas.html">Empresas</a> </li>
+                    <li> <a class="text-white mr-lg-3 active" href="empresas.html">Empresas</a> </li>
                     <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
                     <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
                 </ul>
@@ -77,11 +77,11 @@
           <div id="account">
             <div id="sign-in">
               <span>Accede a tu cuenta</span>
-              <button style="border: none;" class="rounded-button-white">Iniciar Sesion</button>
+              <button style="border: none;" class="rounded-button-white sign-in">Iniciar Sesion</button>
             </div>
             <div id="sign-up">
               <span>¿No tienes cuenta?</span>
-              <button class="outline-button">Registrate</button>
+              <button class="outline-button register">Registrate</button>
             </div>
           </div>
         </section>
@@ -448,62 +448,72 @@
 </section>
 
 <footer>
-    <div class="container-fluid footer-content">
-      <section class="row py-lg-5">
-        <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
-          <img class="d-block" src="img/logo-epesos.svg" alt="">
-          <a class="d-block mt-4 text-white" href="#">Empresas</a>
-        </div>
-        <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
-          <h4>Contáctanos</h4>
-          <p>José Mariano Abasolo 827, Centro. 64000 Monterrey, N.L.</p>
-          <p>800 037 3767</p>
-          <a href="mailto:hola@epesos.com">hola@epesos.com</a>
-        </div>
-        <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
-          <div class="">
-            <h4>Síguenos</h4>
-            <ul class="social">
-                <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-          </div>
-          <div class="mt-lg-5">
-            <h4>Descarga la App</h4>
-            <img class="w-40" src="img/google-play-badge.png" alt="Google Play">
-          </div>
-        </div>
-        <div class="col-12 col-lg-3 py-3 py-lg-0 mb-5 mt-3 mb-lg-0">
-          <div class="row">
-            <div class="col-6 col-lg-12 text-lg-center text-left">
-              <h4>Accede a tu cuenta</h4>
-              <button style="border: none;" class="rounded-button-white sign-in mt-3">Iniciar Sesión</button>
-            </div>
-            <div class="col-6 col-lg-12 mt-lg-5 text-lg-center text-left">
-              <h4>¿No tienes cuenta?</h4>
-              <button class="outline-button register mt-3">Registrate</button>
-            </div> 
-          </div>
-        </div>
-    </section>
-  
-    <section class="copyright row">
-      <div class="col-12 col-lg-3">
-          <p>®Todos los derechos reservados. <br> <strong>ePesos 2020</strong></p>
+  <div class="container-fluid footer-content">
+    <section class="row py-lg-5">
+      <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
+        <img class="d-block" src="img/logo-epesos.svg" alt="">
+        <a class="d-block mt-4 text-white" href="empresas.html">Empresas</a>
       </div>
-      <div class="col-12 col-lg-9">
-        <ul class="menu-footer text-lg-right text-left">
-            <li class="py-2 py-lg-0"> <a href="#">Portal administrativo ePesos</a> <span class="ml-lg-4 d-lg-inline-block d-none">|</span class="ml-lg-4"></li class="py-2 py-lg-0">
-            <li class="py-2 py-lg-0"> <a href="#">Preguntas frecuentes </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
-            <li class="py-2 py-lg-0"> <a href="#">Aviso de Privacidad </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
-            <li class="py-2 py-lg-0"> <a href="#">Términos y Condiciones</a></li>
-        </ul>
+      <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
+        <h4>Contáctanos</h4>
+        <div class="mb-4">
+          <p class="p-lg-0 m-0"><i class="fas fa-map-marker-alt mr-2"></i>José Mariano Abasolo 827,</p class="p-lg-0 m-lg-0">
+          <p class="p-lg-0 m-0"><i class="fas fa-map-marker-alt mr-2 invisible"></i>Centro. 64000 Monterrey, N.L.</p>
+          <p class="p-lg-0 m-0"><i class="fas fa-map-marker-alt mr-2 invisible"></i>Monterrey, N.L.</p>
+        </div>
+        <div class="mb-4">
+          <p><i class="fas fa-phone-alt mr-2"></i>800 037 3767</p>
+        </div>
+        <div class="mb-4">
+          <a href="mailto:hola@epesos.com"><i class="fas fa-envelope mr-2"></i>hola@epesos.com</a>
+        </div class="mb-4">
+        
+        
+      </div>
+      <div class="col-12 col-lg-3 py-3 py-lg-0 footer-section">
+        <div class="">
+          <h4>Síguenos</h4>
+          <ul class="social">
+            <li> <a href="https://www.facebook.com/ePesosMx/"><i class="fab fa-facebook-f"></i></a></li>
+            <li> <a href="https://www.linkedin.com/company/anticipoepesos/"><i class="fab fa-linkedin-in"></i></a></li>
+            <!-- <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fab fa-youtube"></i></a></li> -->
+          </ul>
+        </div>
+        <div class="mt-lg-5 mt-4">
+          <h4>Descarga la App</h4>
+          <img class="w-40" src="img/google-play-badge.png" alt="Google Play">
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 py-3 py-lg-0 mb-5 mt-3 mb-lg-0">
+        <div class="row">
+          <div class="col-6 col-lg-12 text-lg-center text-left">
+            <h4>Accede a tu cuenta</h4>
+            <button class="rounded-button-white sign-in mt-3">Iniciar Sesión</button>
+          </div>
+          <div class="col-6 col-lg-12 mt-lg-5 text-lg-center text-left">
+            <h4>¿No tienes cuenta?</h4>
+            <button class="outline-button register mt-3">Registrate</button>
+          </div> 
+        </div>
+      </div>
+  </section>
+
+  <section class="copyright row">
+    <div class="col-12 col-lg-3">
+        <p>®Todos los derechos reservados. <br> <strong>ePesos 2020</strong></p>
     </div>
-    </section>
-    </div>
-  </footer>
+    <div class="col-12 col-lg-9">
+      <ul class="menu-footer text-lg-right text-left">
+          <li class="py-2 py-lg-0"> <a href="http://portal.epesos.com/">Portal administrativo ePesos</a> <span class="ml-lg-4 d-lg-inline-block d-none">|</span class="ml-lg-4"></li class="py-2 py-lg-0">
+          <li class="py-2 py-lg-0"> <a href="faqs.html">Preguntas frecuentes </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
+          <li class="py-2 py-lg-0"> <a href="aviso-privacidad">Aviso de Privacidad </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
+          <li class="py-2 py-lg-0"> <a href="terminos">Términos y Condiciones</a></li>
+      </ul>
+  </div>
+  </section>
+  </div>
+</footer>
   
 
 
@@ -537,46 +547,6 @@
       // nav: true
     });
   });
-
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('footer').outerHeight();
-
-    $(window).scroll(function(event) {
-      didScroll = true;
-    });
-
-    setInterval(function() {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-      }
-    }, 250);
-
-    function hasScrolled() {
-      var st = $(this).scrollTop();
-
-      // Make sure they scroll more than delta
-      if (Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-      // If they scrolled down and are past the navbar, add class .nav-up.
-      // This is necessary so you never see what is "behind" the navbar.
-      if (st > lastScrollTop && st > navbarHeight) {
-        // Scroll Down
-        $('footer').removeClass('nav-down').addClass('nav-up');
-      } else {
-        // Scroll Up
-        if (st + $(window).height() < $(document).height()) {
-          $('footer').removeClass('nav-up').addClass('nav-down');
-        }
-      }
-
-      lastScrollTop = st;
-    }
-
     
     let btn_sign = document.getElementsByClassName('sign-in');
     let pop_sign = document.getElementById('pop-in');

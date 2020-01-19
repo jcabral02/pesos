@@ -124,6 +124,9 @@ body {
     .header nav .main-menu li, .header-alt nav .main-menu li, .header-empresas nav .main-menu li {
       display: inline-block;
       color: #fff; }
+      .header nav .main-menu li .active, .header-alt nav .main-menu li .active, .header-empresas nav .main-menu li .active {
+        border-bottom: 2px solid #39A935;
+        padding-bottom: 2px; }
   .header nav .movil-menu, .header-alt nav .movil-menu, .header-empresas nav .movil-menu {
     text-align: right; }
     .header nav .movil-menu li, .header-alt nav .movil-menu li, .header-empresas nav .movil-menu li {
@@ -134,7 +137,7 @@ body {
 
 .header-alt {
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px 20px; }
+  padding: 12px 20px; }
 
 nav .main-menu {
   text-align: right; }
@@ -143,15 +146,15 @@ nav .main-menu {
     color: #fff; }
 
 footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(#39a935), to(#056ca4));
-  background: linear-gradient(180deg, #39a935 0%, #056ca4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#148e40), to(#087391));
+  background: linear-gradient(180deg, #148e40 0%, #087391 100%);
   color: #fff;
   position: relative;
   margin-top: -80px;
   min-height: 360px;
   clear: both;
   padding-top: 60px;
-  z-index: -2;
+  z-index: 0;
   height: 500px; }
   @media (max-width: 676px) {
     footer {
@@ -162,7 +165,7 @@ footer {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5); } }
   footer .footer-content {
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     bottom: 0; }
     @media (max-width: 676px) {
       footer .footer-content {
@@ -182,7 +185,8 @@ footer {
           bottom: 0; } }
       footer .footer-content .copyright p {
         color: #fff;
-        opacity: 80%; }
+        opacity: 80%;
+        font-size: 14px; }
   footer p, footer h3, footer h4 {
     font-size: 16px !important; }
   footer h4 {
@@ -196,12 +200,19 @@ footer {
     text-align: center; }
     footer .menu-footer li a {
       color: #fff;
-      opacity: 80%; }
+      opacity: 80%;
+      font-size: 14px; }
+    footer .menu-footer li p {
+      font-size: 14px; }
   footer .social li {
     display: inline-block;
     font-size: 20px;
     margin-right: 20px;
     color: #fff; }
+    @media (max-width: 676px) {
+      footer .social li {
+        font-size: 35px;
+        margin-right: 25%; } }
     footer .social li a {
       color: #fff; }
 
@@ -224,13 +235,15 @@ footer {
   background: #fff 0% 0% no-repeat padding-box; }
 
 .rounded-button-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#39a935), to(#056ca4));
-  background: linear-gradient(180deg, #39a935 0%, #056ca4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea536), to(#0d8478));
+  background: linear-gradient(180deg, #2ea536 0%, #0d8478 100%);
   color: #fff; }
 
 .rounded-button-blue {
   background: #385E67 0% 0% no-repeat padding-box;
   color: #fff; }
+  .rounded-button-blue:hover {
+    color: #fff; }
 
 .outline-button {
   color: #fff;
@@ -723,7 +736,7 @@ footer {
     height: 560px;
     padding: 0; }
     .carousel-movil-desktop .beneficios-movil h2 {
-      font: Extrabold 44px/90px "Open Sans", sans-serif;
+      font: 800 44px/90px "Open Sans", sans-serif;
       display: -webkit-box;
       display: flex;
       -webkit-box-orient: vertical;
@@ -954,9 +967,8 @@ nav .main-menu {
     font: 700 22px/24px Open Sans;
     color: #385E67; }
   .main .main-content {
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    top: -2px; }
+    top: -2px;
+    background: #e2eff8; }
   .main .knows {
     background-color: white;
     height: 55vh;
@@ -971,6 +983,14 @@ nav .main-menu {
             align-items: center; }
     .main .knows h2 {
       color: #385E67; }
+  .main .conoce-beneficios {
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    background: #f1f8fd;
+    box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 40px;
+    margin-top: -40px; }
 
 .sin-costo, .bajo-costo {
   background: url("../img/sin-costo.jpg") no-repeat;
@@ -1122,6 +1142,10 @@ nav .main-menu {
 
 .bg-ice-blue {
   background: #EEF6FB; }
+
+.bottom-radius {
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px; }
 
 .text-blue {
   color: #385E67;

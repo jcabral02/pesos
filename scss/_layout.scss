@@ -108,8 +108,6 @@ nav{
     }
 }
 
-
-
 .beneficios{
     background: url('../img/textura-beneficios.png') no-repeat;
     background-size: cover;
@@ -172,6 +170,7 @@ nav{
     top: -320px;
     margin-bottom: -320px;
     z-index: 900;
+
     article{
         h3{
             font: $Bold 22px/24px Open Sans;
@@ -179,9 +178,8 @@ nav{
         }
     }
     .main-content{
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
         top:-2px;
+        background: $ice-blue;
     }
     .knows{
         background-color: rgb(255, 255, 255);
@@ -194,6 +192,17 @@ nav{
         h2{
             color: $dark-blue;
         }
+    }
+    .conoce-beneficios{
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+        background: #f1f8fd;
+        -webkit-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 30px 40px -16px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: 40px;
+        margin-top: -40px;
     }
 }
 .sin-costo{
