@@ -240,6 +240,7 @@
 }
 
 // Carousel
+
 .owl-carousel{
     display: flex;
     flex-direction: column;
@@ -262,8 +263,11 @@
                 .content-slider{
                     position: relative;
                     z-index: 9999;
-                    top: 50%;
+                    top: 60%;
                     left: 0;
+                    @media (max-width: 676px) {
+                        top: 80%;
+                    }
                 }
                 .overlay{
                     position: absolute;
@@ -279,10 +283,14 @@
                     // background-size: cover !important;
                     // position: relative;
                     height: 800px;
+                    @media (max-width: 676px) {
+                        height: 620px;
+                    }
                 }
                 .slide-2{
                     @extend .slide-1;
                     // background: url('../img/slider2.jpg') no-repeat;
+                    
                 }
             }
         }

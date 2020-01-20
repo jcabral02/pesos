@@ -23,7 +23,8 @@ h2 {
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  scroll-behavior: smooth; }
 
 /*
    * Remove text-shadow in selection highlight:
@@ -47,7 +48,7 @@ html {
    */
 hr {
   display: block;
-  height: 1px;
+  height: 0.5px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
@@ -204,6 +205,10 @@ footer {
     display: inline-block;
     padding: 0 10px;
     text-align: center; }
+    @media (max-width: 676px) {
+      footer .menu-footer li {
+        display: block;
+        text-align: left; } }
     footer .menu-footer li a {
       color: #fff;
       opacity: 80%;
@@ -239,6 +244,8 @@ footer {
 
 .rounded-button-white {
   background: #fff 0% 0% no-repeat padding-box; }
+  .rounded-button-white:hover {
+    color: #385E67; }
 
 .rounded-button-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#2ea536), to(#0d8478));
@@ -716,8 +723,11 @@ footer {
       .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
         position: relative;
         z-index: 9999;
-        top: 50%;
+        top: 60%;
         left: 0; }
+        @media (max-width: 676px) {
+          .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
+            top: 80%; } }
       .owl-carousel .owl-stage-outer .owl-stage .owl-item .overlay {
         position: absolute;
         height: 800px;
@@ -729,6 +739,9 @@ footer {
         width: 100%; }
       .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
         height: 800px; }
+        @media (max-width: 676px) {
+          .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
+            height: 620px; } }
 
 .carousel-movil-desktop {
   background: url(../img/textura-beneficios.png) no-repeat;
@@ -821,11 +834,6 @@ footer {
 
 body {
   overflow-x: hidden; }
-
-.owl-one .owl-stage-outer {
-  width: auto; }
-  .owl-one .owl-stage-outer .owl-stage .owl-item {
-    height: 800px; }
 
 .header-empresas {
   background: rgba(0, 0, 0, 0.7);
@@ -925,7 +933,7 @@ nav .main-menu {
 .beneficios {
   background: url("../img/textura-beneficios.png") no-repeat;
   background-size: cover;
-  height: 880px;
+  min-height: 960px;
   padding: 0; }
   .beneficios h2 {
     text-align: left;
@@ -1005,12 +1013,18 @@ nav .main-menu {
   top: -320px;
   margin-bottom: -320px;
   z-index: 900; }
+  @media (max-width: 676px) {
+    .main {
+      top: -160px; } }
   .main article h3 {
     font: 700 22px/24px Open Sans;
     color: #385E67; }
   .main .main-content {
     top: -2px;
     background: #e2eff8; }
+    @media (max-width: 676px) {
+      .main .main-content {
+        margin-bottom: 160px; } }
   .main .knows {
     background-color: white;
     height: 55vh;
@@ -1037,7 +1051,7 @@ nav .main-menu {
 .sin-costo, .bajo-costo {
   background: url("../img/sin-costo.jpg") no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 80px 20px 50px;
   border-top: 10px solid #39A935;
   border-top-left-radius: 30px;
   color: #fff;
@@ -1130,24 +1144,26 @@ nav .main-menu {
   @media (max-width: 676px) {
     .beneficios-empresas {
       background-size: cover; } }
-  .beneficios-empresas .beneficio .paso {
-    text-align: right;
-    font: 700 60px/24px "Open Sans", sans-serif;
-    letter-spacing: 0;
-    color: rgba(0, 0, 0, 0.1);
-    padding: 13px 0 0 0; }
-  .beneficios-empresas .beneficio h3 {
-    text-align: left;
-    font: Bold 18px/24px Open Sans;
-    letter-spacing: 0;
-    color: #39A935;
-    opacity: 1; }
-  .beneficios-empresas .beneficio p {
-    text-align: left;
-    font: Regular 14px/26px Open Sans;
-    letter-spacing: 0;
-    color: #385E67;
-    opacity: 1; }
+  .beneficios-empresas .beneficio {
+    margin-bottom: 50px; }
+    .beneficios-empresas .beneficio .paso {
+      text-align: right;
+      font: 700 60px/24px "Open Sans", sans-serif;
+      letter-spacing: 0;
+      color: rgba(0, 0, 0, 0.1);
+      padding: 13px 0 0 0; }
+    .beneficios-empresas .beneficio h3 {
+      text-align: left;
+      font: 700 22px Open Sans;
+      letter-spacing: 0;
+      color: #39A935;
+      opacity: 1; }
+    .beneficios-empresas .beneficio p {
+      text-align: left;
+      font: Regular 14px/26px Open Sans;
+      letter-spacing: 0;
+      color: #385E67;
+      opacity: 1; }
 
 .cuadros-comparacion {
   position: relative; }

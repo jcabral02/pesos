@@ -2,16 +2,6 @@ body{
     overflow-x: hidden;
 }
 
-.owl-one{
-    .owl-stage-outer {
-        width: auto;
-        .owl-stage {
-            .owl-item{
-                height: 800px;
-            }
-        }
-    }
-}
 .header-empresas{
     @extend .header;
     background: rgba(0,0,0,0.7);
@@ -111,7 +101,7 @@ nav{
 .beneficios{
     background: url('../img/textura-beneficios.png') no-repeat;
     background-size: cover;
-    height:880px ;
+    min-height:960px ;
     padding: 0;
     h2{
         text-align: left;
@@ -190,7 +180,9 @@ nav{
     top: -320px;
     margin-bottom: -320px;
     z-index: 900;
-
+    @media (max-width: 676px) {
+        top: -160px;
+    }
     article{
         h3{
             font: $Bold 22px/24px Open Sans;
@@ -200,6 +192,9 @@ nav{
     .main-content{
         top:-2px;
         background: $ice-blue;
+        @media (max-width: 676px) {
+            margin-bottom: 160px;
+        }
     }
     .knows{
         background-color: rgb(255, 255, 255);
@@ -228,7 +223,7 @@ nav{
 .sin-costo{
     background: url('../img/sin-costo.jpg') no-repeat;
     background-size: cover;
-    padding: 120px 0;
+    padding: 80px 20px 50px;
     border-top: 10px solid $green;
     border-top-left-radius: 30px;
     color: $white;
@@ -337,6 +332,7 @@ nav{
         background-size: cover;
     }
     .beneficio{
+        margin-bottom: 50px;
         .paso{
             text-align: right;
             font: $Bold 60px/24px $Open_Sans;
@@ -346,7 +342,7 @@ nav{
         }
         h3{
             text-align: left;
-            font: Bold 18px/24px Open Sans;
+            font: $Bold 22px Open Sans;
             letter-spacing: 0;
             color: $green;
             opacity: 1;

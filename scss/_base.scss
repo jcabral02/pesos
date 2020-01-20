@@ -6,6 +6,7 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    scroll-behavior: smooth;
   }
   
   /*
@@ -34,7 +35,7 @@
   
   hr {
     display: block;
-    height: 1px;
+    height: 0.5px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
@@ -229,6 +230,10 @@ footer{
           display: inline-block;
           padding: 0 10px;
           text-align: center;
+          @media (max-width: 676px) {
+            display: block;
+            text-align: left;
+        }
           a{
               color: $white;
               opacity: 80%;
@@ -279,6 +284,9 @@ footer{
 .rounded-button-white{
     @extend .rounded-button;
     background: $white 0% 0% no-repeat padding-box;
+    &:hover{
+      color: $dark-green;
+    }
 }
 .rounded-button-gradient{
     @extend .rounded-button;
