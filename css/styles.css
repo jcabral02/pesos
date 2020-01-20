@@ -644,37 +644,6 @@ footer {
             flex-direction: column;
     text-align: center;
     padding: 1vh; }
-    @media (max-width: 676px) {
-      #pop-up #modal-up {
-        width: 90vw; } }
-    #pop-up #modal-up #titles {
-      width: 100%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      margin-bottom: 2vh; }
-      #pop-up #modal-up #titles h5 {
-        width: 80%;
-        font-weight: 700;
-        color: #588a91; }
-    #pop-up #modal-up form input[type=text], #pop-up #modal-up form input[type=password], #pop-up #modal-up form input[type=email] {
-      height: 6.5vh;
-      width: 80%;
-      border-radius: 50px;
-      border: solid #588a91 1px;
-      text-indent: 1vw;
-      margin-bottom: 2.5vh; }
-    #pop-up #modal-up form input[type=submit] {
-      background: -webkit-gradient(linear, left bottom, left top, from(#218d69), to(#008000));
-      background: linear-gradient(to top, #218d69, #008000);
-      border: none;
-      color: #fff;
-      padding: 1vw;
-      width: 80%;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 18px; }
     #pop-up #modal-up i {
       text-align: right;
       padding-right: .5vw;
@@ -682,19 +651,73 @@ footer {
       color: #588a91;
       font-size: 30px;
       cursor: pointer; }
-    #pop-up #modal-up #warn {
-      margin-top: 2vh;
-      width: 100%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center; }
-      #pop-up #modal-up #warn span {
-        font-style: italic;
+    #pop-up #modal-up #form {
+      display: block; }
+      @media (max-width: 676px) {
+        #pop-up #modal-up #form {
+          width: 90vw; } }
+      #pop-up #modal-up #form #titles {
+        width: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        margin-bottom: 2vh; }
+        #pop-up #modal-up #form #titles h5 {
+          width: 80%;
+          font-weight: 700;
+          color: #588a91; }
+      #pop-up #modal-up #form form input[type=text], #pop-up #modal-up #form form input[type=password], #pop-up #modal-up #form form input[type=email] {
+        height: 6.5vh;
         width: 80%;
-        text-align: left;
-        color: #588a91;
-        font-size: 14px; }
+        border-radius: 50px;
+        border: solid #588a91 1px;
+        text-indent: 1vw;
+        margin-bottom: 2.5vh; }
+      #pop-up #modal-up #form form input[type=submit] {
+        background: -webkit-gradient(linear, left bottom, left top, from(#218d69), to(#008000));
+        background: linear-gradient(to top, #218d69, #008000);
+        border: none;
+        color: #fff;
+        padding: 1vw;
+        width: 80%;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 18px; }
+      #pop-up #modal-up #form #warn {
+        margin-top: 2vh;
+        width: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center; }
+        #pop-up #modal-up #form #warn span {
+          font-style: italic;
+          width: 80%;
+          text-align: left;
+          color: #588a91;
+          font-size: 14px; }
+    #pop-up #modal-up #message {
+      display: none;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      height: 100%; }
+      #pop-up #modal-up #message input[type=submit] {
+        margin-top: 6vh;
+        background: -webkit-gradient(linear, left bottom, left top, from(#218d69), to(#008000));
+        background: linear-gradient(to top, #218d69, #008000);
+        border: none;
+        color: white;
+        padding: 1vw;
+        width: 60%;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 18px; }
 
 .priv {
   border: none;

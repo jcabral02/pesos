@@ -73,7 +73,6 @@ $(document).ready(function(){
 
   /*Modal inicio de sesion*/
   let btn_sign = document.getElementsByClassName('sign-in');
-  let phone = document.getElementById('phone');
   let modal_sign = document.getElementById('modal-in');
   let pop_sign = document.getElementById('pop-in');
   let pop_sign_2 = document.getElementById('pop-in-2');
@@ -87,7 +86,6 @@ $(document).ready(function(){
   // modal header
   btn_sign[0].addEventListener('click', function(){
     pop_sign.style.display = 'flex';
-    phone.focus();
     btn_sign[0].style.background = 'green';
   });
 
@@ -104,7 +102,6 @@ $(document).ready(function(){
   // modal footer
   btn_sign[2].addEventListener('click', function(){
     pop_sign_2.style.display = 'flex';
-    document.querySelector('.phone').focus();
   });
 
   close_in.addEventListener('click', function(){
@@ -114,18 +111,34 @@ $(document).ready(function(){
   /**modal registro */
   let btn_up = document.getElementsByClassName('register');
   let pop_up = document.getElementById('pop-up');
-  let name = document.getElementById('names');
   let close_up = document.getElementById('close-up');
+  let submit = document.getElementById('submit');
+  let messageSend = document.getElementById('message');
+  let formUp = document.getElementById('form');
+  let closeMess = document.getElementById('closeMess');
 
   for(let i=0; btn_up.length>i; i++){
     btn_up[i].addEventListener('click', function(){
       pop_up.style.display = 'flex';
-      name.focus();
     })
   }
 
-  close_up.addEventListener('click', function(){
+  function closeUp(){
     pop_up.style.display = 'none';
+    formUp.style.display = 'block';
+    messageSend.style.display = 'none';
+  }
+
+  close_up.addEventListener('click', closeUp);
+  closeMess.addEventListener('click', closeUp);
+
+  submit.addEventListener('click', function(event){
+    event.preventDefault();
+    formUp.style.display = 'none';
+    messageSend.style.display = 'flex';
+    // setTimeout(function(){
+    //   closeUp();
+    // },1500)
   })
 
 });

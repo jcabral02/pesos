@@ -179,18 +179,24 @@
 <section id="pop-up">
   <div id="modal-up">
     <i class="fas fa-times-circle" id="close-up"></i>
-    <div id="titles">
-      <h5>Llena los siguientes datos para agendar tu cita</h5>
+    <div id="form">
+      <div id="titles">
+        <h5>Llena los siguientes datos para agendar tu cita</h5>
+      </div>
+      <form action="">
+        <input id="names" type="text" placeholder="*Nombres(s)">
+        <input id="last" type="text" placeholder="*Apellidos">
+        <input id="company" type="text" placeholder="*Empresa">
+        <input id="email" type="email" placeholder="*Correo electronico corporativo">
+        <input type="submit" name="" id="submit" value="Enviar">
+      </form>
+      <div id="warn">
+        <span>* Datos requeridos</span>
+      </div>
     </div>
-    <form action="">
-      <input id="names" type="text" placeholder="*Nombres(s)">
-      <input id="last" type="text" placeholder="*Apellidos">
-      <input id="company" type="text" placeholder="*Empresa">
-      <input id="email" type="email" placeholder="*Correo electronico corporativo">
-      <input type="submit" name="" id="" value="Enviar">
-    </form>
-    <div id="warn">
-      <span>* Datos requeridos</span>
+    <div id="message">
+      <h3>Muchas Gracias por enviar sus datos</h3>
+      <input type="submit" name="" id="closeMess" value="Aceptar">
     </div>
   </div>
 </section>

@@ -173,41 +173,6 @@
         flex-direction: column;
         text-align: center;
         padding: 1vh;
-        @media (max-width: 676px) {
-            width: 90vw;
-        }
-        #titles{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 2vh;
-            h5{
-                width: 80%;
-                font-weight: 700;
-                color: #588a91;
-            }
-        }
-        $width: 80%;
-        form{
-            input[type=text], input[type=password], input[type=email]{
-                height: 6.5vh;
-                width: $width;
-                border-radius: 50px;
-                border: solid #588a91 1px;
-                text-indent: 1vw;
-                margin-bottom: 2.5vh;
-            }
-            input[type=submit]{
-                background: linear-gradient(to top, #218d69,#008000);
-                border: none;
-                color: $white;
-                padding: 1vw;
-                width: $width;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 18px;
-            }
-        }
         i{
             text-align: right;
             padding-right: .5vw;
@@ -216,17 +181,73 @@
             font-size: 30px;
             cursor: pointer;
         }
-        #warn{
-            margin-top: 2vh;
-            width: 100%;
-            display: flex;
+        #form{
+            display: block;
+            @media (max-width: 676px) {
+                width: 90vw;
+            }
+            #titles{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2vh;
+                h5{
+                    width: 80%;
+                    font-weight: 700;
+                    color: #588a91;
+                }
+            }
+            $width: 80%;
+            form{
+                input[type=text], input[type=password], input[type=email]{
+                    height: 6.5vh;
+                    width: $width;
+                    border-radius: 50px;
+                    border: solid #588a91 1px;
+                    text-indent: 1vw;
+                    margin-bottom: 2.5vh;
+                }
+                input[type=submit]{
+                    background: linear-gradient(to top, #218d69,#008000);
+                    border: none;
+                    color: $white;
+                    padding: 1vw;
+                    width: $width;
+                    border-radius: 50px;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+            #warn{
+                margin-top: 2vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                span{
+                    font-style: italic;
+                    width: $width;
+                    text-align: left;
+                    color: #588a91;
+                    font-size: 14px;
+                }
+            }
+        }
+        #message{
+            display: none;
             justify-content: center;
-            span{
-                font-style: italic;
-                width: $width;
-                text-align: left;
-                color: #588a91;
-                font-size: 14px;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            input[type=submit]{
+                margin-top: 6vh;
+                background: linear-gradient(to top, #218d69,#008000);
+                border: none;
+                color: white;
+                padding: 1vw;
+                width: 60%;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 18px;
             }
         }
     }
