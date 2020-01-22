@@ -1330,6 +1330,20 @@ nav .main-menu {
   color: #385E67;
   font-size: 14px; }
 
+.movil h2 {
+  font-size: 36px; }
+
+.texto-testimonios {
+  position: absolute;
+  top: 340px;
+  width: 60%;
+  left: 20%;
+  color: white;
+  font-size: 16px; }
+
+.relative {
+  position: relative; }
+
 .owl-nav .owl-prev, .owl-nav .owl-next {
   background: url("../img/back.png") no-repeat !important;
   background-size: contain;
