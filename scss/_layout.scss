@@ -177,8 +177,8 @@ nav{
 
 .main{
     position: relative;
-    top: -320px;
-    margin-bottom: -320px;
+    top: -330px;
+    margin-bottom: -330px;
     z-index: 900;
     @media (max-width: 676px) {
         top: -160px;
@@ -232,6 +232,7 @@ nav{
         padding: 30px 0;
     }
     h4{
+        font-weight:$Semibold;
         @media (max-width: 676px) {
             font-size: 16px;
             width: 80%;
@@ -320,9 +321,6 @@ nav{
 
 .beneficios-empresas{
     padding: 60px 0;
-    background: url('../img/ondas.png') no-repeat;
-    background-size: contain;
-    background-position: center;
     position: relative;
     margin-top: -27vh;
     margin-bottom: -2px;
@@ -332,7 +330,7 @@ nav{
         background-size: cover;
     }
     .beneficio{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         .paso{
             text-align: right;
             font: $Bold 60px/24px $Open_Sans;
@@ -349,10 +347,11 @@ nav{
         }
         p{
             text-align: left;
-            font: Regular 14px/26px Open Sans;
+            font-weight: $Regular;
+            font-size: 14px;
             letter-spacing: 0;
             color: $dark-green;
-            opacity: 1;
+            line-height: 26px;
         }
     }
 }

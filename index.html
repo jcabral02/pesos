@@ -57,12 +57,12 @@
         <nav>
           <!-- menu desktop -->
           <ul class="main-menu d-none d-lg-block d-xl-none d-xl-block d-none d-md-block d-lg-none">
-              <li> <a class="text-white mr-lg-3" href="empresas.html">Empresas</a> </li>
-              <li> <button class="rounded-button-white mr-lg-3 register" style="border: none;">Registrate</button> </li>
+              <li> <a class="text-white mr-lg-3 link" href="empresas.html">Empresas</a> </li>
+              <li> <a href="https://anticipos.epesos.com" class="rounded-button-white mr-lg-3">Registrate</a> </li>
               <li> <button class="outline-button sign-in">Iniciar Sesión</button> </li>
           </ul>
           <!-- menu movil -->
-          <ul class="movil-menu d-block d-sm-block">
+          <ul class="movil-menu d-block d-sm-none">
               <li><button id="btn_menu" class="text-white mr-lg-3" style="border: none; background-color: transparent;"><img src="./img/icono-menumovil.svg" alt=""></button></li>
           </ul>
         </nav>
@@ -80,7 +80,7 @@
   </section>
   <section class="options">
     <ul>
-      <li><a href="#">Inicio</a><i class="fas fa-chevron-right"></i></li>
+      <li><a href="index.html">Inicio</a><i class="fas fa-chevron-right"></i></li>
       <li><a href="empresas.html">Empresas</a><i class="fas fa-chevron-right"></i></li>
     </ul>
   </section>
@@ -88,17 +88,17 @@
     <div id="account">
       <div>
         <span>Accede a tu cuenta</span>
-        <button style="border: none;" class="rounded-button-white">Iniciar Sesion</button>
+        <button style="border: none;" class="rounded-button-white sign-in">Iniciar Sesion</button>
       </div>
       <div id="sign-up">
         <span>¿No tienes cuenta?</span>
-        <button class="outline-button register">Registrate</button>
+        <a href="https://anticipos.epesos.com" class="outline-button">Registrate</a>
       </div>
     </div>
   </section>
 </div>
 
-<section class="owl-carousel slider-basico">
+<section id="slider-superior" class="owl-carousel slider-basico">
   <!-- Slide 1 -->
   <div class="container-fluid slide-1">
     <div class="row no-gutter">
@@ -131,7 +131,7 @@
   <!-- Slide 3 -->
   <div class="container-fluid slide-2">
     <div class="row no-gutter">
-      <div class="col-12 col-lg-8 offset-lg-2 text-center">
+      <div class="col-12 col-lg-10 offset-lg-1 text-center">
         <div class="content-slider">
           <h1>Cuando los colaboradores tienen ePesos, pueden cubrir eso que les causa ansiedad financiera</h1>
           <h2 class="mb-3 description">Emergencias y servicios básicos como: Alimentos, Medicamentos, Transporte, Pago de servicios y Tiempo Aire.</h2>
@@ -172,7 +172,7 @@
     </form>
     <a href="#">Olvide mi contrase&ntilde;a</a>
     <hr>
-    <div id="forgot"><span>¿No tienes cuenta? </span><a href="#">Registrate aqu&iacute;</a></div>
+    <div id="forgot"><span>¿No tienes cuenta? </span><a href="https://anticipos.epesos.com">Registrate aqu&iacute;</a></div>
   </div>
 </section>
 
@@ -195,8 +195,10 @@
       </div>
     </div>
     <div id="message">
-      <h3>Muchas Gracias por enviar sus datos</h3>
-      <input type="submit" name="" id="closeMess" value="Aceptar">
+      <i class="fas fa-check-circle"></i>
+      <h3>¡Gracias por tu información!</h3>
+      <p>Pronto descubrirás todos los beneficios que ePesos tiene para ti y tu empresa.</p>
+      <input type="submit" name="" id="closeMess" value="Cerrar">
     </div>
   </div>
 </section>
@@ -206,15 +208,163 @@
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="avisoPrivacidad">Aviso de Privacidad</h5>
+        <h5 class="modal-title" id="avisoPrivacidad">Aviso de Privacidad Integral</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a aliquet metus, ut blandit risus. Fusce eget urna lacus. Ut ultrices sit amet nunc vitae finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vestibulum nunc est, sed efficitur lorem elementum eget. Duis sit amet ligula elit. Maecenas vitae diam pharetra, condimentum turpis eu, volutpat mi. Donec a turpis magna. Etiam pretium arcu urna, in sagittis ex finibus eget. Donec commodo ante ac maximus eleifend. Duis faucibus quam risus. Nullam posuere est vitae justo molestie condimentum. Fusce sapien velit, ornare eget vehicula ut, cursus in odio. Donec eu hendrerit urna, in euismod eros. Donec non ornare lacus. Sed lorem lectus, finibus sed eleifend in, hendrerit pulvinar enim.
+      <div id="aviso" class="modal-body">
+        
+        <p>Publicamos el presente Aviso de Privacidad, cumpliendo lo que establece la Ley Federal de Protección de Datos Personales en Posesión de los Particulares en adelante denominada como “la Ley”, con los siguientes términos:</p>
+        
+        <p class="bold">Responsable de los datos personales	</p>
+        
+        <p>Para efectos de este Aviso de Privacidad, EPESOS SAPI de C.V. (en adelante “ePesos”) con domicilio en José Mariano Abasolo 827, Colonia Centro, Monterrey, Nuevo León, México, 64000, es responsable de la obtención, divulgación, almacenamiento, uso, manejo, aprovechamiento y/o disposición de los datos personales que recabemos de nuestros Titulares (en adelante, el “Titular”).</p>
+        
+        <p class="bold">Finalidades de los datos personales a recabar	</p>
+        
+        <p class="bold">Finalidades primarias </p>
+        
+        <p>Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita, así como para la relación jurídica entre usted y ePesos:</p>
 
-        Aenean ultricies, mauris vel posuere imperdiet, augue felis sodales purus, pretium commodo augue risus et nisl. Nullam nec arcu sollicitudin, pretium neque ac, rutrum dui. Etiam eu mi quis magna sollicitudin ultricies sit amet congue enim. Nunc turpis est, dictum id mauris ut, ultricies iaculis ligula. Donec vitae tristique leo. In hac habitasse platea dictumst. Sed viverra pharetra diam vel euismod. Aliquam vulputate ullamcorper nibh sed aliquet. 
+        <p>
+          • Evaluación de solicitud de crédito.<br>
+          • Celebración de contratos para formalizar la prestación del servicio.<br>
+          • Verificación de identidad.<br>
+          • Evitar duplicidad de registros.<br>
+          • Para proveerle las funcionalidades y los servicios que ofrece ePesos a través del Sitio Web y las Aplicaciones (en lo sucesivo los “Servicios”).<br>
+          • Realizar proceso de cobranza en caso de mora.<br>
+          • Atención al Titular y solicitudes generadas por el Titular.<br>
+          • Avisos por diferentes canales de comunicación (e-mail, SMS, WhatsApp, domicilio) sobre cambios en la plataforma, fallas en el sistema o mantenimientos entre otros relacionados al servicio contratado para los cuales no puede haber oposición.<br>
+          • Facturación.<br>
+          • Contacto con fines de realización de encuestas de evaluación de calidad del servicio.<br>
+          • En caso de que usted visite nuestras instalaciones para controlar el acceso y mantener la seguridad de las instalaciones.<br>
+          • Si decide enviar su Currículum Vítae para trabajar en ePesos, para mantener contacto con usted y considerarlo para un proceso de reclutamiento.<br>
+        </p>
+
+        <p>Para dar contestación a sus dudas y comentarios cuando se ponga en contacto con nosotros.</p>
+        
+        <p class="bold text-uppercase">Finalidades secundarias </p>
+        
+        <p>De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias, que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención:</p>
+
+        <p>
+        • Mercadotecnia y publicidad sobre ePesos y/o socios comerciales.<br>
+        • Prospección comercial<br>
+        • Fines estadísticos<br>
+        </p>
+        
+        
+        <p>En caso de que no desee que sus datos personales sean tratados para estos fines secundarios, desde este momento usted nos puede comunicar lo anterior a través del siguiente correo electrónico privacidad@epesos.com.<br>
+
+        La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.</p>
+        
+        <p class="bold">Datos personales recabados</p>	
+        <p>Los datos personales que en ePesos solicitamos a nuestros Titulares son:</p>
+
+        <p>
+          • Datos de identificación y contacto (Nombre, Estado Civil, RFC, CURP, Lugar de nacimiento, Fecha de nacimiento, Nacionalidad, Domicilio,  Teléfono particular y celular, Correo electrónico, Identificación oficial)<br>
+          • Datos laborales relacionados con la “Empresa o Negocio” (Domicilio, Teléfono, Referencias personales y/o comerciales). Entenderemos que, al otorgarnos datos de terceros, usted ha obtenido previamente su consentimiento y les ha informado sobre aviso de privacidad, el cual se encuentra en la página: https://epesos.com/home/avisoprivacidad.  
+        </p>
+       
+        <p>Datos Patrimoniales y Financieros (información fiscal, cuentas bancarias, ingresos y egresos)</p>
+        
+        <p>Estos datos son recabados a través de nuestra página de Internet https://epesos.com, sus subdominios o de manera física por nuestro personal durante la solicitud o contratación de nuestros servicios.</p>
+        
+        <p>Además de los datos personales mencionados anteriormente, para las finalidades informadas en el presente aviso de privacidad, es decir, en caso de que realice una solicitud de crédito utilizaremos los siguientes datos personales considerados como sensibles, que requieren de especial protección:</p>
+        
+        <p>• Datos biométricos (Huella dactilar), utilizados para firmar contratos y pagarés.</p>
+        
+        <p class="bold text-uppercase">¿Con quién compartimos su información personal y para qué fines?</p>
+        
+        <p>ePesos podrá transferir sus datos personales con terceros con los que exista una relación jurídica, con el fin de cumplir con las finalidades descritas en el presente Aviso de Privacidad. Asimismo, podrá transferir sus datos personales en los casos requeridos por la Ley.</p>
+        
+        <p class="bold text-uppercase">Opciones y medios para limitar el uso o divulgación de los datos personales	</p>
+        
+        <p>Los datos personales de los Titulares, serán tratados bajo la más estricta confidencialidad, cuidando las medidas de seguridad administrativas, físicas y técnicas que en ePesos implementamos en nuestras políticas y procedimientos de seguridad internos, evitando la divulgación no autorizada de los datos y limitando su uso a lo establecido en el presente Aviso de Privacidad.</p>
+
+        <p>Usted podrá limitar el uso o divulgación de sus datos personales enviando su solicitud al Comité a la dirección privacidad@epesos.com. En caso de que su solicitud resulte procedente, el Comité lo registrará en el listado de exclusión para la finalidad para la cual es aplicable la exclusión.</p>
+        
+        <p>hace de su conocimiento que existen otros mecanismos para limitar el uso y divulgación de sus datos como lo son el Registro Público para Evitar Publicidad (REPEP) de la PROFECO y el Registro Público de Usuarios (REUS) de la CONDUSEF, los cuales puede consultar para obtener más información a través del sitio web de las dependencias respectivas.</p> 
+        
+        <p class="bold text-uppercase">¿Cómo puede acceder, rectificar, cancelar sus datos personales, u oponerse a su uso? </p>
+        
+        <p>Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.</p>
+        
+        <p>En cualquier momento, el Titular o en su caso el representante legal del Titular (debidamente acreditado ante notario), podrá ejercer los derechos de Acceso, Rectificación (cuando consideren que son erróneos o inexactos), Cancelación (en caso de que considere que los datos no son tratados de forma adecuada), Oposición (en caso de que no quiera que sus datos sean tratados para finalidades específicas) y/o Revocación (cuando ya no sea su deseo como Titular que ePesos continúe usando sus datos personales).</p>
+        
+        <p>En adelante, estos derechos serán referidos en el presente Aviso de Privacidad bajo las iniciales “ARCO”. El ejercicio de uno de ellos no impide el ejercicio del otro y ninguno es presupuesto para el ejercicio de otro.<br><br>
+
+        Para que el Titular exija sus derechos ARCO, deberá enviar su solicitud a nuestro departamento de datos personales al correo electrónico privacidad@epesos.com, y/o directamente a nuestro domicilio en José Mariano Abasolo 827, Colonia Centro, Monterrey, Nuevo León, México, 64000.</p>
+        
+        <p>La solicitud del ejercicio de los derechos del Titular deberá incluir una copia de los siguientes documentos:
+        Identificación oficial vigente del Titular Será válido alguno de los siguientes documentos: Credencial del Instituto Nacional Electoral (o Instituto Federal Electoral), Pasaporte emitido por la Secretaría de Relaciones Exteriores, Cartilla del servicio Militar Nacional o Cédula Profesional.</p>
+        
+        <p>En los casos en que el Titular ejerza sus Derechos ARCO a través de un representante legal, además de acreditar la identidad de ambos (Titular y el Representante legal), se deberá enviar a la citada dirección de correo, una copia legible del poder notarial otorgado al representante legal, o en su caso carta poder firmada ante dos testigos o declaración en comparecencia del Titular por el cual se otorgan facultades para llevar a cabo este trámite.
+        Formato elaborado para hacer valer sus derechos ARCO, el cual puede solicitar al correo privacidad@epesos.com o por chat en https://epesos.com.</p>
+
+        <p>Así como contener los siguientes datos:</p>
+        
+        <p>
+          • Nombre del Titular.<br>
+          • Domicilio y dirección de correo electrónico para notificarle la respuesta a su solicitud.<br>
+          • Descripción clara y precisa de los datos respecto de los cuales se busca ejercer el derecho correspondiente.<br>
+          • Cualquier elemento que facilite la localización de los datos.<br>
+        </p>
+       
+        
+        <p>El plazo de respuesta de su solicitud será de 20 días hábiles contados a partir del día en que se recibió la solicitud de acceso, rectificación, cancelación y oposición correspondiente. La respuesta será comunicada dentro del plazo antes mencionado a la dirección de correo electrónico que el Titular proporcionó en su solicitud. Una vez recibida, tendrá un plazo de 15 días hábiles para hacerla efectiva si procedió.</p>
+
+        <p>En caso de solicitar por escrito con qué datos personales contamos del Titular, serán enviados de manera digital al correo mencionado en la solicitud por medio de un candado por contraseña para resguardar la información.</p>
+
+        <p>>onemos a su disposición el formato para hacer valer sus derechos ARCO solicitándolo al correo privacidad@epesos.com.</p>
+
+        <p>Los datos del departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:</p>
+
+        <p>
+        1) Nombre del departamento: Protección de datos<br>
+        2) Domicilio: José Mariano Abasolo #827, Centro, Monterrey, Monterrey, 64000, Nuevo León, México.<br>
+        3) Correo electrónico: privacidad@epesos.com<br>
+        4) Número telefónico: 01 800 037 3767<br>
+      </p>
+        
+        <p class="bold">Revocación del consentimiento	</p>
+        <p>Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que, para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.</p>
+
+        <p>Para revocar su consentimiento deberá presentar su solicitud a través del correo electrónico privacidad@epesos.com.</p>
+        
+        <p class="bold text text-uppercase">El uso de tecnologías de rastreo en nuestro portal de internet	</p>
+        
+        <p>Le informamos que en nuestra página de Internet utilizamos cookies, web beacons u otras tecnologías, a través de las cuales es posible monitorear su comportamiento como usuario de Internet, así como brindarle un mejor servicio y experiencia al navegar en nuestra página.
+        Con el uso de nuestra página web, usted reconoce y autoriza a ePesos al uso de “Cookies” y “web beacons”.</p>
+
+        <p>Una “Cookie” es un archivo de texto situado por un servidor web en el disco duro del internauta que lo visita con información sobre sus preferencias y pautas de navegación.</p>
+
+        <p>Un “web beacon”, es una imagen usada para cuantificar el número de visitas o monitorear el comportamiento del cliente.
+        Los datos personales que recabamos a través de estas tecnologías los utilizaremos para el siguiente fin: mejorar la experiencia del usuario en nuestra plataforma, conocer el uso de esta y publicidad dirigida al visitante.</p>
+        
+        <p>Los datos personales que obtenemos de estas tecnologías de rastreo son los siguientes:</p>
+
+        <p>
+          • Identificadores, nombre de usuario y contraseñas de una sesión (para chat y ePesos.com)<br>
+          • Región en la que se encuentra el usuario <br>
+          • Tipo de navegador del usuario <br>
+          • Tipo de sistema operativo del usuario <br>
+          • Fecha y hora del inicio y final de una sesión de un usuario <br>
+          • Dichas tecnologías pueden ser deshabilitadas en todos los navegadores, accediendo a las opciones, herramientas, configuración o funciones similares, dependiendo del navegador que utilice. Al deshabilitar o bloquear estas tecnologías se podrían bloquear ciertas funciones de nuestro sitio. Para conocer más del tema o conocer el procedimiento para su navegador, puede consultar http://allaboutcookies.org/es/.
+        </p>
+       
+        
+        <p class="bold text-uppercase">Cambios al aviso de privacidad	</p>
+        <p>El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas.</p>
+
+        <p>Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de:</p>
+
+        <p>
+          • Correo electrónico del Titular registrado en nuestro sistema.<br>
+          • Nuestro sitio de Internet https://epesos.com.<br>
+          • De existir cambios en las finalidades para el tratamiento de los datos personales, se solicitará nuevamente el consentimiento del Titular.  
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
@@ -223,19 +373,287 @@
   </div>
 </div>
 
+<!-- Modal Terminos y condiciones -->
 <div class="modal fade mt-2" id="terminosCondiciones" tabindex="-1" role="dialog" aria-labelledby="terminosCondiciones" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="terminosCondiciones">Terminos y condiciones</h5>
+        <h5 class="modal-title" id="terminosCondiciones">Términos y Condiciones de Uso de la Plataforma ePesos</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a aliquet metus, ut blandit risus. Fusce eget urna lacus. Ut ultrices sit amet nunc vitae finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vestibulum nunc est, sed efficitur lorem elementum eget. Duis sit amet ligula elit. Maecenas vitae diam pharetra, condimentum turpis eu, volutpat mi. Donec a turpis magna. Etiam pretium arcu urna, in sagittis ex finibus eget. Donec commodo ante ac maximus eleifend. Duis faucibus quam risus. Nullam posuere est vitae justo molestie condimentum. Fusce sapien velit, ornare eget vehicula ut, cursus in odio. Donec eu hendrerit urna, in euismod eros. Donec non ornare lacus. Sed lorem lectus, finibus sed eleifend in, hendrerit pulvinar enim.
+      <div id="terminos" class="modal-body">
+        <p class="bold">Introducción</p>
+        <p>
+          Bienvenidos a www.epesos.com (en adelante, la “Plataforma”, en conjunto e indistintamente con cualquiera de las páginas, sitios, dominios y subdominios que lo integran). EPESOS, S.A.P.I. de C.V. (en adelante “ePesos”) provee la Plataforma junto con la información y los servicios de ésta, sujeto a los siguientes Términos y Condiciones. Al usar la Plataforma, el usuario acepta apegarse a los Términos y Condiciones. ePesos podrá, a su plena discreción, modificar los Términos y Condiciones sin previo aviso al usuario. Le solicitamos a los usuarios que revisen estos Términos y Condiciones periódicamente cuando utilicen la Plataforma. Al utilizar la Plataforma continuamente posterior a las modificaciones que se puedan realizar, el usuario acepta dichas modificaciones. Asimismo, cuando un usuario obtenga información de la Plataforma, o cuando utilice los servicios o la funcionalidad de la Plataforma, éste será sujeto a las reglas o lineamientos incluidas sobre la información, servicios, o funcionalidad que se pueda incluir en cualquier momento y que pueda aumentar o mejorar la información, servicios o funcionalidad. Todo tipo de reglas o lineamientos se incorporan por referencia a estos Términos y Condiciones. </p>
 
-        Aenean ultricies, mauris vel posuere imperdiet, augue felis sodales purus, pretium commodo augue risus et nisl. Nullam nec arcu sollicitudin, pretium neque ac, rutrum dui. Etiam eu mi quis magna sollicitudin ultricies sit amet congue enim. Nunc turpis est, dictum id mauris ut, ultricies iaculis ligula. Donec vitae tristique leo. In hac habitasse platea dictumst. Sed viverra pharetra diam vel euismod. Aliquam vulputate ullamcorper nibh sed aliquet. 
+          <p>Le solicitamos a los usuarios que por favor lean estos Términos y Condiciones detenidamente. Al entrar a nuestro sitio y a cualquiera de sus páginas, el usuario declara estar enterado y de acuerdo con sujetarse a los Términos y Condiciones incluidos a continuación. Si el usuario no está de acuerdo con estos Términos y Condiciones debe salir del sitio y evitar utilizar la Plataforma, sin quedar por ello exento de cualquier obligación que haya adquirido con ePesos.  Asimismo, si en algún momento posterior el usuario no está de acuerdo con los Términos y Condiciones, debe de abandonar el sitio inmediatamente.</p>
+
+          <p class="bold">Descripción del Servicio</p>
+          
+          <p>Tanto la Plataforma como la información, servicios, y funcionalidades disponibles a través de la Plataforma se podrán considerar generalmente como el “Servicio” o los “Servicios”, en su conjunto. Todas las funcionalidades o servicios que aumenten o mejoren el Servicio en el futuro se considerarán parte del Servicio y serán sujetas a estos Términos y Condiciones. ePesos no será responsable por la exactitud, usabilidad, o disponibilidad de la información u otro contenido, datos, texto, URLs, gráficas, audio, videos, publicidad, o cualquier tipo de material (colectivamente, el “Contenido”) trasmitido o hecho disponible mediante el Servicio. ePesos no será responsable por decisiones que se hayan tomado con base en esta información o Contenido.</p>
+          
+          <p class="bold">Aceptación de estos Términos y Condiciones</p>
+
+          <p>Estos Términos y Condiciones conforman el acuerdo en su totalidad entre ePesos y el usuario y rigen el uso del Servicio, y reemplazan cualquier otro acuerdo previo entre el usuario y ePesos. El usuario también podría ser sujeto a Términos y Condiciones adicionales que podrían aplicar cuando use servicios afiliados, contenido de terceros, o software de terceros. Para la interpretación de estos Términos y Condiciones, serán competentes los Tribunales del Fuero Común en el Estado de Nuevo León. Ahora bien, todo aquello que no estuviese previsto en los Términos y Condiciones, se aplicarán las disposiciones relativas del Código de Comercio, los usos y costumbres mercantiles y supletoriamente las del Código Civil vigente en el Estado de Nuevo León.</p>
+
+          <p class="bold">Modificaciones a estos Términos y Condiciones</p>
+         
+          <p>Reservamos el derecho, en cualquier momento de modificar, descontinuar, temporal o permanentemente, el Servicio o cualquier parte de este, con o sin notificación alguna. El usuario está de acuerdo con que ePesos no será responsable por realizar modificaciones, suspender o descontinuar el Servicio.</p>
+          
+          <p class="bold">Privacidad y Datos Personales</p>
+          
+          <p>ePesos se obliga a mantener confidencial la información que reciba del Usuario que tenga dicho carácter conforme a las disposiciones legales aplicables en los Estados Unidos Mexicanos. ePesos no asume ninguna obligación de mantener confidencial cualquier otra información que el Usuario le proporcione, ya sea al inscribirse a la Plataforma o en cualquier otro momento posterior, incluyendo aquella información que el Usuario proporcione a través de boletines, redes sociales o conversaciones en línea (chats); así como la información que obtenga a través de las Cookies que se describen en el siguiente párrafo.</p>
+
+          <p>El Usuario que tenga acceso a la Plataforma, conviene en recibir archivos que les transmitan los servidores de ePesos. "Cookie" significa un archivo de datos que se almacena en el disco duro de la computadora del Usuario cuando éste tiene acceso a la Plataforma. Dichos archivos pueden contener información tal como la identificación proporcionada por el Usuario o información para rastrear las páginas que el Usuario ha visitado. Una Cookie no puede leer los datos o información del disco duro del Usuario ni leer las Cookies creadas por otros sitios o páginas.</p>
+
+          <p>Para conocer más información acerca de la protección de sus datos personales, finalidades de tratamiento, así como los mecanismos para ejercer sus derechos, ponemos a su disposición nuestro Aviso de Privacidad que puede ser consultado en el siguiente enlace: https://epesos.com/home/avisoprivacidad.</p>
+          
+          <p class="bold">Registro e inscripción</p>
+          
+          <p>Nuestros usuarios requieren una Cuenta ePesos para utilizar nuestros servicios. El usuario solicitará su registro a ePesos para acceder a la Plataforma en donde podrá hacer uso de los Servicios asociados a su Cuenta ePesos. Como parte de la solicitud de registro, el usuario proporciona cierta información de registro, así como datos de seguridad como Número de Identificación Personal (“NIP”) y contraseña. El usuario es responsable de mantener la confidencialidad de sus datos de seguridad. Si el usuario decide solicitar su registro a ePesos, se compromete a: (a) proveer información verdadera y actualizada, y a completar la información requerida por ePesos durante el proceso de solicitud, (b) mantener actualizada la información para garantizar que permanezca verdadera. Si el usuario proporciona información no real, desactualizada o incompleta, ePesos tiene el derecho a suspender o terminar su Cuenta ePesos y rehusar el uso actual y futuro de la Plataforma y sus Servicios. El usuario podrá actualizar su información en la sección de configuración en el módulo de datos personales en la Plataforma. En caso de requerir ayuda favor de comunicarse a través del chat disponible en la misma página web.</p>
+
+          <p>Si el usuario detecta que los datos de acceso han sido robados o alguien más ha usado su Cuenta ePesos sin su permiso deberá de notificar inmediatamente a aclaraciones@epesos.com.</p>
+          
+          <p>Veracidad y Cambios a su Información</p>
+          
+          <p>Usted se compromete a enviar información verídica acerca de su perfil, como por ejemplo su nombre, domicilio, correo electrónico, e información de Cuenta ePesos ("Información de Perfil"). Asimismo, usted está de acuerdo con tener su Información de Perfil actualizada y de modificar sus datos cuando la información haya cambiado. Usted podrá actualizar su información haciendo clic en la sección de configuración en el módulo de Datos Generales. En caso de requerir apoyo, por favor envíe un correo a hola@epesos.com o comuníquese mediante el chat.</p>
+
+          <p clas="bold">Medios de Contacto</p>
+          
+          <p>El usuario entiende y acepta electrónicamente estos Términos y Condiciones y, del mismo modo, cierta información (“comunicación”) será provista por ePesos al usuario a través de medios electrónicos (p.e., correo electrónico, SMS, notificaciones push, llamadas telefónicas, conversaciones en línea). Las siguientes categorías de “comunicación” serán provistas de forma electrónica: </p>
+
+          <p>
+            • Términos y Condiciones del Servicio, modificaciones, anexos y suplementos;<br>
+            • Aviso de privacidad integral;<br>
+            • Registros de cualquier transacción referente al Servicio, confirmación de transacciones.<br>
+            • Comunicados o noticias relacionadas con el Servicio, incluyendo cualquiera requerida por la regulación.<br>
+            • Cualquier comunicación de servicio al cliente, incluyendo información respecto a aclaraciones, quejas, errores e información relacionada con su Cuenta ePesos.<br>
+            • Promociones.<br>
+            • Cualquier comunicación referente a los Servicios de la Plataforma.<br>
+          </p>
+          
+          <p>Información para completar el registro o transacciones dentro de la Plataforma.<br>
+          El usuario acepta que ePesos no tendrá obligación de proporcionar “comunicación” en papel. Si el usuario no desea recibir y aceptar estos Términos y Condiciones o la “comunicación” de forma electrónica, no deberá utilizar la Plataforma.<br>
+          Si el usuario ha solicitado el registro al Servicio y se le ha creado su Cuenta ePesos en la Plataforma y desea retirar su consentimiento de recibir “comunicación” electrónicamente, deberá desactivar su Cuenta ePesos desde la sección de configuración en el módulo de Seguridad, o bien contactarnos a través del chat de la misma página web. No hay comisiones por cerrar la Cuenta ePesos. El usuario acepta que la Cuenta ePesos no se podrá cerrar, y, por lo tanto, recibirá “comunicación” electrónicamente hasta pagar cualquier adeudo que se tenga al momento. Cualquier solicitud de retirar el consentimiento de recibir “comunicación” electrónicamente” será efectivo después de un periodo razonable de tiempo para procesar la solicitud.</p>
+
+          <p>ePesos se reserva el derecho, a su discreción, de agregar o discontinuar cualquier categoría de “comunicación” electrónica, o de terminar o cambiar los términos y condiciones referente a este punto. ePesos proveerá al usuario notificación de cualquier cambió o terminación.</p>
+          
+          <p>Al aceptar estos Términos y Condiciones, el usuario reconoce que podrá ser contactado por ePesos por vía telefónica, mediante notificaciones por escrito, correos electrónicos, mensajes de texto, y mensajes de chat. Con respecto a las llamadas telefónicas, el usuario da su consentimiento del uso de llamadas pregrabadas y llamadas automatizadas a cualquier número telefónico asociado a la Cuenta ePesos, incluyendo números de teléfono celular las cuales podrían resultar en cargos de telefonía al usuario. También se podrán enviar correos electrónicos o correo postal a cualquier dirección que podamos identificar del usuario en bases de datos públicas y privadas.</p>
+          
+          <p class="bold">Servicios y Elegibilidad</p>
+          <p>Anticipos de nómina.</p> 
+          
+          <p>ePesos ofrece acceso al usuario a una Cuenta ePesos en su Plataforma para disponer un porcentaje de su próximo “Sueldo” de forma anticipada cobrando una comisión por el monto usado. ePesos calcula el porcentaje otorgado con base en las políticas de autorización (“políticas de autorización”) establecidas en un convenio de colaboración celebrado con la empresa empleadora del usuario.</p>
+
+          <p>ePesos muestra al usuario el monto resultante de ese porcentaje durante el proceso de solicitud de registro y sólo hasta ser aceptado por el usuario se crea la Cuenta ePesos dentro de la Plataforma para acceder al Servicio. Este monto en ningún momento representará un saldo a favor del usuario, sino su capacidad de disposición de recursos, mismos que, en caso de existir alguna disposición, le serán descontados de su Sueldo durante el siguiente corte de nómina, en conjunto con las comisiones generadas por dicha disposición y/o por el uso de los Servicios de la plataforma. El monto otorgado, al ser un porcentaje de las percepciones del empleado, podrá fluctuar conforme estas varíen. Por lo tanto, el monto podrá aumentar o disminuir para mantener el porcentaje otorgado en cumplimiento con el convenio de colaboración por la empresa. </p>
+
+          <p>ePesos se compromete a recalcular el monto otorgado cuando la empresa actualice la información de sus empleados en la Plataforma de ePesos, para actualizarlo automáticamente cuando un monto distinto al previo sea calculado de acuerdo con las políticas de autorización.</p>
+
+          <p>Si por alguna razón se determina que el usuario no genera suficiente ingreso mediante sus percepciones, suficientes para pagar el anticipo de nómina en el siguiente ciclo, ePesos tiene el derecho de no aprobar la solicitud del anticipo de nómina al usuario. 
+          Crédito Revolvente. ePesos otorga una línea de crédito revolvente para personas físicas y morales con actividad productiva, cobrando una comisión por el monto usado y con un plazo de pago semanal antes de la generación de intereses.</p>
+
+          <p class="bold">Uso de los Servicios</p>
+          <p>La disposición del monto otorgado del Servicio será a través de las funcionalidades provistas en la Plataforma de ePesos:</p>
+          
+          <p>
+            • Tiempo Aire.<br>
+            • Pago de Servicios.<br>
+            • Retiro en ventanilla bancaria.<br>
+            • Retiro a cuenta bancaria.<br>
+
+          </p>
+          
+          
+          <p>Como medida de seguridad, el usuario es responsable de proporcionar su NIP correctamente para que ePesos pueda procesar la transacción.</p>
+          
+          <p class="bold">Funcionalidades	</p>
+
+          <p>Pagos de Servicios	</p>
+          
+          <p>ePesos a través de integración tecnológica con proveedores de servicios o agregadores de éstos ofrece al usuario la posibilidad de realizar los pagos de servicios electrónicos. Los proveedores disponibles son los que aparecen en el portal de usuario en la sección (https://epesos.com/Logged/EPESOS#/ps) cuando éste inicia sesión dentro de la Plataforma. ePesos cobra al usuario una comisión por transacción definida por cada proveedor o agregador. El monto del pago más la comisión por transacción será descontada del saldo disponible del usuario una vez confirmado el pago. Los datos necesarios para procesar el pago son definidos por cada proveedor de servicio, ePesos no es responsable si el proveedor en algún momento decide modificarlos. En dicho caso, ePesos sólo es responsable de actualizar su Plataforma en un periodo de tiempo razonable para permitir al usuario seguir realizando sus pagos. Es responsabilidad del usuario capturar y verificar los datos para que su pago sea aplicado exitosamente. </p>
+
+          <p>Al finalizar la transacción y recibir confirmación por parte del proveedor de servicio, en la Plataforma se mostrará al usuario un número de confirmación y un número de contacto del proveedor. Con estos datos el usuario podrá realizar cualquier aclaración directamente con el proveedor del servicio. Estos datos podrán ser consultados en los siguientes 90 días en el resumen de movimientos del usuario (https://epesos.com/Logged/EPESOS#/resumen).  En caso de necesitar ayuda u orientación al respecto se puede comunicar por los medios electrónicos provistos por ePesos.</p>
+
+          <p>El tiempo de aplicación del pago en los sistemas y/o estado de Cuenta ePesos del usuario es definida por el proveedor. ePesos es responsable de comunicar inmediatamente el pago al proveedor del servicio o agregador, sin embargo, no se responsabiliza si el proveedor tiene una intermitencia o atraso en aplicar el pago del usuario en sus sistemas. El usuario es responsable de pagar sus servicios considerando el tiempo de aplicación del proveedor. ePesos no reembolsará al usuario pagos que por ser realizados fuera del tiempo de aplicación del proveedor resulten en una interrupción o alteración del servicio del proveedor con el usuario.</p>
+
+          <p>Recargas de Tiempo Aire</p>
+          
+          <p>ePesos a través de integración tecnológica con proveedores de telecomunicaciones o agregadores de éstos ofrece al usuario la posibilidad de realizar recargas de tiempo aire y datos móviles. Los proveedores disponibles son los que aparecen en el portal de usuario en la sección (https://epesos.com/Logged/EPESOS#/ta). El monto del pago por transacción será descontado del saldo disponible del usuario una vez confirmado el pago. Es responsabilidad del usuario capturar y verificar el número de celular al cual quiere recargar tiempo aire para que su pago sea aplicado exitosamente. </p>
+
+          <p>Al finalizar la transacción y recibir confirmación por parte del proveedor, en la Plataforma se mostrará al usuario un número de confirmación y un número de contacto del proveedor, con estos datos el usuario podrá realizar cualquier aclaración directamente con el proveedor del servicio. Estos datos podrán ser consultados en los siguientes 90 días en el resumen de movimientos del usuario (https://epesos.com/Logged/EPESOS#/resumen).  En caso de necesitar ayuda u orientación al respecto se puede comunicar por los medios electrónicos provistos por ePesos.</p>
+
+          <p>ePesos es responsable de comunicar inmediatamente el pago al proveedor del servicio o agregador, sin embargo, no se responsabiliza si el proveedor tiene una intermitencia o atraso en aplicar el pago del usuario en sus sistemas. Por política de operación de los proveedores de telecomunicaciones, las recargas de tiempo aire no podrán ser canceladas, por lo tanto, ePesos no podrá reembolsar bajo ninguna circunstancia el monto de un pago confirmado por el proveedor.</p>
+
+          <p class="bold">Retiros</p>
+          
+          <p>Retiros en ventanilla bancaria</p>
+          
+          <p>ePesos ofrece la posibilidad a sus usuarios de realizar retiros en ventanilla bancaria. El usuario o una persona indicada por él puede presentarse en ventanilla a retirar los fondos. Los bancos disponibles para este servicio son los que aparecen en el portal de usuario en la sección (https://epesos.com/Logged/EPESOS#/retira-ventanilla). ePesos cobra al usuario una comisión por transacción definida en la plataforma para cada banco. El monto del pago más la comisión por transacción será descontada del saldo disponible del usuario una vez confirmado el pago. Los datos necesarios para procesar el retiro son: </p>
+
+          <p>
+            • El nombre de la persona que acudirá a la ventanilla (“beneficiario”) y, el monto para retirar.  <br>
+            • Es necesario que el nombre sea capturado igual a como aparece en una identificación oficial del beneficiario, quien es responsable de acudir con la identificación oficial original y una copia para poder retirar los fondos de la transacción. ePesos, en colaboración el banco, ofrece este servicio en todas las sucursales de los bancos participantes a nivel nacional, sin embargo, ePesos no es responsable en caso de que el banco niegue el servicio al usuario por alguna política extraoficial a la operación habitual del banco. En estos casos ePesos invita al usuario a indicarnos la sucursal en la cual se le negó el servicio para reportarlo directamente con el banco.<br>
+          </p>
+          
+          
+          <p>Al finalizar la transacción el usuario recibirá una confirmación en la plataforma con las instrucciones y los datos necesarios para realizar el retiro en el banco. Estos datos podrán ser consultados en los siguientes 90 días en el resumen de movimientos del usuario (https://epesos.com/Logged/EPESOS#/resumen).  Es responsabilidad del usuario de indicar claramente al beneficiario los datos e instrucciones para poder realizar la operación en la sucursal de su elección. En caso de necesitar ayuda u orientación al respecto se puede comunicar por los medios electrónicos provistos por ePesos.</p>
+
+          <p>El tiempo de procesamiento de la transacción es de una hora siempre y cuando el retiro se realice en un día hábil bancario en horario de 8am a 3pm, en caso contrario la transacción será procesada a las 9am del siguiente día hábil bancario. ePesos es responsable de comunicar inmediatamente la transacción al banco, sin embargo, no se responsabiliza si el banco tiene una intermitencia o atraso en aplicar la operación del usuario en sus sistemas. El usuario es responsable de acudir a una sucursal bancaria del banco terminando el tiempo de procesamiento para cobrar su dinero. Tenga en cuenta que, al solicitar usted el retiro en ventanilla, se efectuará el cargo en su cuenta y se aplicarán las comisiones correspondientes, aun cuando usted no haya acudido a realizar el retiro.</p>
+
+          <p>En caso de que los retiros no hayan cobrados en un plazo de 7 días hábiles bancarios siguientes a la fecha de la transacción estos serán cancelados automáticamente por ePesos y reembolsados al usuario. En caso de que el usuario requiera cancelar la transacción dentro de los 7 días siguientes a la transacción, el usuario deberá solicitarlo por los medios de comunicación electrónica provistos por ePesos quien procederá a verificar con el banco que el retiro no fue cobrado y en un tiempo máximo de 2 horas hábiles reembolsará el monto de la transacción al usuario. En ambos casos, ePesos reembolsará al usuario las comisiones por transacción o por disposición del servicio financiero que hubieran sido generadas por dicho movimiento.</p>
+
+          <p class="bold">Retiros por transferencia SPEI a cuenta bancaria</p>
+          
+          <p>ePesos ofrece la posibilidad a sus usuarios de realizar retiros por transferencia SPEI a cuenta bancaria. ePesos cobra al usuario una comisión por transacción definida en la Plataforma. El monto del pago más la comisión por transacción será descontada del saldo disponible del usuario una vez confirmado el pago. Los datos necesarios para procesar el retiro son: </p>
+          <p>
+            • El nombre del titular de la cuenta bancaria destino (“beneficiario”), <br>
+            • El número de CLABE o el banco y número de tarjeta de la cuenta bancaria destino y,<br>
+            • El monto para retirar.  <br>
+          </p>
+       
+          <p>Es responsabilidad del usuario capturar y verificar la información para que su transferencia sea realizada exitosamente.
+          Al finalizar la transacción el usuario recibirá una confirmación en la Plataforma con una clave de rastreo que podrá utilizar para consultar el comprobante electrónico del pago (CEP) en la página del banco de México (https://www.banxico.org.mx/cep/). Con el CEP, el usuario podrá realizar cualquier aclaración directamente con el banco de la cuenta bancaria destino. La clave de rastreo podrá ser consultada en los siguientes 90 días en el resumen de movimientos del usuario (https://epesos.com/Logged/EPESOS#/resumen). En caso de necesitar ayuda u orientación al respecto el usuario se puede comunicar por los medios electrónicos provistos por ePesos.</p>
+          
+          <p>El tiempo de procesamiento de la transacción es inmediato, de lunes a domingo, salvo que se realice en el rango de 6pm a 7pm. ePesos es responsable de comunicar inmediatamente al sistema SPEI, sin embargo, no se responsabiliza si el proveedor tiene una intermitencia o atraso en aplicar el pago del usuario en la cuenta bancaria destino.</p>
+
+          <p>Las transferencias SPEI a cuentas bancarias realizadas por ePesos se reembolsarán automáticamente al usuario, cuando el banco receptor confirme que la cuenta bancaria no existe o tiene una restricción para recibir transferencias. ePesos es responsable de reembolsar el monto de la transacción y las comisiones por transacción o por disposición del servicio financiero que hubieran sido por generadas por dicho movimiento. En caso de que el banco no confirme un error en la transferencia, ePesos no reembolsará al usuario estos movimientos, siendo responsabilidad del usuario realizar la aclaración directamente con el banco de la cuenta bancaria destino.</p>
+
+          <p class="bold">Pagos de Adeudos	</p>
+          
+          <p>El usuario podrá realizar pagar adeudos derivados de sus anticipo de Sueldo o créditos a través de las cadenas comerciales o bancos que se muestran en la sección Abona (https://epesos.com/Logged/EPESOS#/deposita) de la Plataforma. En la misma sección se podrá consultar el tiempo de aplicación, horarios disponibles y datos necesarios para realizar el pago definido por cada proveedor de recepción de pagos. Al usuario se le cobrará una comisión por realizar el pago en el establecimiento de su elección, dicha comisión es cobrada por los servicios del proveedor y no forma parte del monto del depósito recibido por ePesos. Los horarios de servicio, tiempos de aplicación, los datos necesarios para realizar el pago de adeudo y la comisión cobrada es información definida por cada proveedor y podrá cambiar sin previo aviso. ePesos se responsabiliza a actualizar dicha información en su plataforma en un tiempo razonable para que el usuario pueda elegir la opción más conveniente. ePesos, en colaboración con los proveedores de recepción de pagos, ofrece este servicio en todas las sucursales de las cadenas comerciales y bancos participantes a nivel nacional, sin embargo, ePesos no es responsable en caso de que una sucursal niegue el servicio al usuario por alguna política extraoficial. En estos casos, ePesos invita al usuario a indicarnos la sucursal en la cual se le negó el servicio para reportarlo directamente con el proveedor de recepción de pagos.</p>
+
+          <p>Es responsabilidad del usuario consultar y proporcionar los datos correctamente para realizar un pago en el establecimiento de su elección. El establecimiento deberá de entregar un comprobante físico al usuario por el pago realizado. Es responsabilidad del usuario mantenerlo a salvo para ser usado para cualquier aclaración con ePesos. En caso de que el usuario proporcione equivocadamente los datos al establecimiento y su dinero sea erróneamente aplicado al adeudo de otro usuario será responsabilidad del usuario que depositó resolver ese tema directamente con el proveedor de recepción de pagos. </p>
+
+          <p>Es responsabilidad del usuario pagar hasta el monto de su adeudo al momento del pago. Al realizar un pago el usuario acepta que el adeudo que tenga al momento de capital o accesorios financieros será cubierto automáticamente. ePesos se reserva el derecho de cancelar el servicio sin previo aviso en caso de que el usuario llegara a realizar un pago en exceso. </p>
+
+          <p>En caso de intermitencia entre la comunicación electrónica entre los proveedores de recepción de pagos y ePesos, los abonos realizados por el usuario podrán: </p>
+
+          <p>
+            • Ser cancelados automáticamente de su Cuenta ePesos, o,<br>
+            • No verse reflejados en su Cuenta ePesos. <br>
+          </p>
+          
+          <p>
+            En caso de que el usuario detecte un abono en una de estas situaciones se podrá comunicar por los medios de comunicación electrónica y tendrá que proporcionar el comprobante físico que recibió del proveedor. ePesos, en un máximo de 1 hora hábil aplicará correctamente el monto del abono a la Cuenta ePesos del usuario.
+          </p>
+          
+          <p class="bold">Mueves	</p>
+
+          <p>Los usuarios de ePesos podrán realizar pagos de adeudos de otros usuarios de ePesos los siete días de la semana, 24 horas al día en la sección MUEVE de la plataforma (https://epesos.com/Logged/EPESOS#/mueve). Los datos necesarios para procesar la operación son:           </p>
+          <p>
+            • El número de celular de la Cuenta ePesos destino (“beneficiario”), y,<br>
+            • El monto a pagar. <br>
+          </p>
+          
+          <p>Es responsabilidad del usuario capturar y verificar la información para que la transferencia sea realizada exitosamente. 
+          El usuario que recibe un pago de otro usuario acepta que el adeudo que tenga en ese momento será cubierto automáticamente. ePesos se reserva el derecho de cancelar el servicio sin previo aviso a ambos usuarios en caso de que se llegara a realizar un pago en exceso.
+          En caso de que el usuario presente un error en la información proporcionada al realizar la operación y requiera revertir el movimiento, se tendrá que comunicar por los medios de comunicación electrónica y ePesos verificará si la Cuenta ePesos destino ya hizo uso del monto transferido. ePesos dará una respuesta de la solicitud de cancelación en máximo 1 hora hábil después de recibir la solicitud.</p>
+
+          <p class="bold">Restablecimiento de Saldo / Pago del Anticipo</p>	
+          
+          <p>Para los usuarios con el servicio de anticipos de nómina el pago de su adeudo será realizado por la empresa en máximo tres días hábiles después del pago de nómina establecido por la empresa. El pago recibido en su Cuenta ePesos deberá de coincidir con el monto descontado de su recibo de nómina en el último periodo. En caso de no ser así, el usuario se podrá comunicar por los medios de comunicación electrónica para realizar una aclaración. </p>
+
+          <p>El servicio de anticipo de nómina se suspenderá en caso de que la empresa pague una cantidad menor del adeudo del usuario a la fecha de corte de nómina de la empresa, fecha en la cual la empresa consulta los adeudos de sus colaboradores con ePesos. El servicio de anticipo de nómina permanecerá suspendido hasta que la empresa descuente y pague el monto restante del adeudo en periodos de nómina siguientes. Durante este tiempo, ePesos no generará intereses ordinarios o moratorios en la Cuenta ePesos del usuario.</p>
+
+          <p class="bold">Accesorios financieros	</p>
+          
+          <p>ePesos cobrará comisiones por sus Servicios y/o accesorios financieros de acuerdo con los términos acordados con usted o su empleadora, en los casos aplicables, de acuerdo con lo estipulado dentro del Convenio de Autorización, para usuarios de anticipos de nómina, o el Contrato de Crédito, para usuarios de crédito revolvente.</p>
+
+          <p class="bold">Aclaraciones	</p>
+          
+          <p>Para efectos de llevar a cabo cualquier aclaración respecto de su cuenta y de los Servicios que ePesos entrega a usted por medio de la Plataforma, ePesos pone a su disposición el número de teléfono 800 037 3767, la dirección de correo aclaraciones@epesos.com, así como un servicio de atención a clientes por medio de un chat desplegable en los sitios que componen la Plataforma. Para tal fin, el horario de atención hábil se considerará de lunes a viernes en horario de 8 a 23 horas, hora central de la Ciudad de México, exceptuando días feriados celebrados dentro de los Estados Unidos Mexicanos.</p>
+
+          <p>Usted acepta que, al presentar su solicitud de aclaración, ePesos podrá efectuar una verificación de su identidad y realizará una investigación utilizando la información que posea de sus cuentas, transacciones, pagos de servicios, así como de cualquier otra que pudiera ser solicitada al titular de la cuenta, a fin de dar una respuesta satisfactoria a su solicitud. El plazo de respuesta a las aclaraciones será de 1 a 3 días hábiles, el cual podrá extenderse en caso de requerir información adicional ya sea del titular o de algún tercero. Usted podrá consultar el estado de su aclaración utilizando cualquiera de los medios señalados en el párrafo anterior dentro de los horarios establecidos para ello.</p>
+
+          <p>ePesos se reservará el derecho de resolver una aclaración en su contra cuando los cargos reportados sean atribuibles a su incumplimiento de estos Términos y Condiciones y/o a un uso inadecuado de sus credenciales de acceso a su cuenta y de su información confidencial. En caso de una resolución a su favor se realizará la bonificación o compensación correspondiente a una cuenta bancaria que el titular previamente nos haya proporcionado. De no contar con alguna o que ésta no haya sido proporcionada por el titular, el monto será emitido a una referencia bancaria para su cobro. Usted acepta también que, en caso de no obtener una respuesta por parte del titular en cualquier etapa del proceso, ePesos se reserva el derecho de cerrar la aclaración en un plazo de 15 días hábiles.</p>
+
+          <p class="bold">Uso Aceptable y Responsabilidades del Usuario</p>
+          
+          <p>Como condición para su uso de la Plataforma y los Servicios, usted declara y garantiza a ePesos que no usará la Plataforma y los Servicios para ningún propósito que sea ilegal o prohibido por estos Términos y Condiciones. ePesos no es una institución financiera y al acceder o utilizar los Servicios provistos por la Plataforma, usted se obliga a no:</p>
+          <p>
+            • utilizar los Servicios en violación de cualquier ley o regulación aplicable, incluyendo hacer promoción o alentar alguna actividad ilícita;<br>
+            • utilizar los Servicios por cualquier otro medio que no sea a través de la interfaz que proporciona ePesos para acceder a ellos;<br>
+            • utilizar los Servicios para llevar a cabo concursos, loterías, rifas, marketing multinivel, esquemas piramidales, actividades de juegos de azar o apuesta o cualquier otra forma de actividad financiera regulada o prohibida;<br>
+            • utilizar los Servicios de cualquier manera que pudiera infringir los derechos de cualquier tercero, incluyendo, sin limitación, la propiedad intelectual, privacidad, publicidad o derechos contractuales;<br>
+            • utilizar los Servicios en cualquier manera que pudiera inhibir, interferir con, interrumpir o afectar negativamente a otros miembros del pleno disfrute de los Servicios, o que puedan dañar, inutilizar, sobrecargar o deteriorar el funcionamiento de los Servicios de cualquier manera;<br>
+            •  utilizar los Servicios en relación con la distribución de spam (que definimos como correo electrónico masivo no solicitado o cualesquiera otros mensajes no solicitados de carácter comercial, religioso, romántico o político o de otra índole que no esté dentro de los fines previstos de los Servicios);<br>
+            • modificar, adaptar, subarrendar, vender, aplicar técnicas de ingeniería inversa, descompilar o desmontar cualquier porción del Servicio o de la Plataforma;<br>
+            • utilizar los Servicios para ningún propósito comercial, a menos que sea con el consentimiento previo por escrito de ePesos;
+            • acechar, intimidar, amenazar, acosar, hostigar o causar molestias a cualquier otro usuario de nuestros servicios;<br>
+            • recoger o almacenar cualquier información sobre cualquier otro usuario distinto al permitido en nuestros Servicios;<br>
+            • hacerse pasar por otra persona o entidad, o falsificar o tergiversar de otro modo usted o su afiliación con cualquier persona o entidad, ya sea por proporcionar o por omitir proporcionar información;<br>
+            • eludir o intentar vencer cualquier medida de control o de seguridad relacionados con el uso de los Servicios; o
+            <br>ayudar a cualquier tercero a realizar cualquiera de los anteriores.<br>
+          </p>
+          
+          
+          <p>Si ePesos, a su exclusivo criterio, cree que puede haber participado en actividades restringidas por estos Términos y Condiciones o por la ley, podemos tomar varias medidas para proteger a ePesos, otros usuarios y otros terceros de tarifas, multas, sanciones, y cualquier otra responsabilidad. Las acciones que podemos tomar incluyen las siguientes:</p>
+          <p>
+            • podemos suspender o limitar su acceso a la Plataforma o los Servicios;<br>
+            • podemos actualizar la información inexacta que nos proporcionó;<br>
+            • podemos negarnos a permitirle usar la Plataforma o Servicios en el futuro;<br>
+            • podemos emprender acciones legales contra usted;<br>
+            • podemos responsabilizarlo por el monto de los daños a ePesos causados por su violación de estos Términos y Condiciones.<br>
+          </p>
+          
+          <p>ePesos, a su exclusivo criterio, se reserva el derecho de rescindir estos Términos y Condiciones, el acceso a su Plataforma o el acceso a los Servicios por cualquier motivo y en cualquier momento, con o sin previo aviso.
+          Su Cuenta ePesos y los servicios proporcionados a través de la Plataforma son de su uso exclusivo y, por lo tanto, intransferibles. Usted asume la responsabilidad de cuidar y proteger su información de acceso a la plataforma, evitando compartir la misma con terceros. </p>
+
+          <p class="bold">Terminación del Servicio</p>
+          
+          <p>Reservamos el derecho, en nuestra plena discreción, de suspender o terminar estos Términos y Condiciones, su Cuenta ePesos, y su habilidad de acceder a la Plataforma y sus Servicios, inmediatamente y sin previo aviso por cualquier motivo incluyendo el incumplimiento por usted de estos Términos y Condiciones, o bien, por cualquier acción que usted tome que determinemos inapropiada.</p>
+
+          <p class="bold">Derechos Otorgados a ePesos</p>
+          
+          <p>Al ingresar o proporcionarnos información, datos, contraseñas, nombres de usuarios, NIPs y cualquier otra información de inicio de sesión, material y cualquier otro contenido a través de la Plataforma, usted nos autoriza a usar este contenido con el único propósito de proveerle los servicios ofrecidos a través de esta y cualquier otro medio provisto por ePesos para la atención a clientes. Al proporcionar esta información, usted declara que tiene derecho de enviarlo a ePesos para su uso con este fin, deslindando a ePesos de cualquier obligación de pagar cualquier comisión, así como de cualquier otra limitación.</p>
+
+          <p class="bold">Derechos de Propiedad Intelectual</p>
+          
+          <p>Usted declara tener conocimiento y aceptar que los derechos de propiedad intelectual respecto de los servicios y contenidos, los signos distintivos y dominios de las páginas, así como los derechos de uso y explotación de estos, incluyendo su divulgación, publicación, reproducción, distribución y transformación, son propiedad exclusiva de ePesos. </p>
+
+          <p>El usuario no adquiere ningún derecho de propiedad intelectual por el simple uso de los servicios y contenidos de la plataforma, y en ningún momento dicho uso será considerado como una autorización ni licencia para modificar, rentar, prestar, vender, distribuir o utilizar los servicios y contenidos con fines distintos a los que se contemplan en los presentes Términos y Condiciones de Uso, así como de los contratos respectivos. Adicionalmente, el usuario no podrá copiar, reproducir, republicar, cargar, postear, trasmitir o distribuir materiales de la Plataforma sin permiso por escrito.</p>
+
+          <p>Asimismo, el usuario acuerda que las mismas disposiciones señaladas en los párrafos anteriores respecto a la titularidad de los derechos de ePesos también son aplicables a los derechos de terceros respecto de los servicios y contenidos de las páginas, dominios o información presentada o vinculada a la plataforma.</p>
+
+          <p class="bold">Exclusión de Garantías y Responsabilidades</p>
+          
+          <p>Con independencia de lo establecido en los contratos de servicio celebrados entre ePesos y las partes correspondientes, ePesos no se hace responsable de la veracidad, exactitud y calidad de la información presente en la Plataforma, sus servicios y materiales. Dichos servicios, información y materiales son presentados “tal cual” y son accesibles sin garantías de ninguna clase.</p>
+
+          <p>Usted acepta expresamente que el uso de los servicios y la Plataforma es bajo su propio riesgo. Es su responsabilidad evaluar la exactitud, integridad y utilidad de todas las opiniones, consejos, servicios, mercancías y otra información proporcionada a través de la Plataforma o en Internet en general. No garantizamos que el servicio será ininterrumpido o libre de errores o que los defectos en el sitio serán corregidos. Los servicios y el sitio y cualquier dato, información, software de terceros, sitios de referencia, servicios o software disponibles en conjunción con o a través de los servicios y el sitio se proporcionan “tal cual” y “según esté disponible”, “con todos los defectos” y sin ninguna garantía o representación de ningún tipo, ya sea expresa o implícita.</p>
+
+          <p>Usted reconoce que ePesos actúa a su vez como distribuidor de otros servicios ofrecidos por terceros, como lo son las recargas móviles, pagos de servicios, abonos y retiro de dinero, entre otros; y que ePesos no es responsable de ninguna tercera parte.
+          ePesos se reserva el derecho a interrumpir el acceso a la Plataforma, así como la prestación de cualquiera o de todos los Servicios que se prestan a través de la misma en cualquier momento y sin previo aviso, ya sea por motivos técnicos, de seguridad, de control, de mantenimiento o por cualquier otra causa justificada.</p>
+
+          <p>Usted acepta y entiende de forma expresa que nosotros no seremos responsables por cualquier daño directo, indirecto, accidental, especial, consecuente o ejemplar, incluyendo, pero no limitándose a, daños por pérdida de ganancias, beneficios, buena voluntad, uso, datos u otras pérdidas intangibles (aún si hemos sido informados de la posibilidad de tales daños); resultado de:</p>
+          <p>
+            • Uso o incapacidad de uso del servicio o cualquier producto obtenido a través del servicio;<br>
+            • acceso no autorizado o alteración de sus transmisiones o datos;<br>
+            • declaraciones o conductas de cualquier tercero en el servicio; o<br>
+            • cualquier otro asunto relacionado con el servicio.<br>
+            • Usted excluye a ePesos de toda responsabilidad sobre los sitios enlazados desde la Plataforma y acepta que ePesos no puede controlar y no controla que entre ellos aparezcan sitios de Internet cuyos contenidos puedan resultar ilícitos, ilegales, contrarios a la moral o a las buenas costumbres o inapropiados.<br>
+            • Asimismo, usted acepta que ePesos no se hace responsable por la utilización que el Cliente realice de los Servicios de la plataforma ni de sus contraseñas, NIPs, así como de cualquier otro material del mismo, infringiendo los derechos de propiedad intelectual o industrial o cualquier otro derecho de terceros.<br>
+            • Indemnización
+          </p>
+         
+          
+          <p>Usted acepta defender, indemnizar y eximir a ePesos, su matriz, sus subsidiarias, miembros y a nuestros funcionarios, directores, agentes, empresas conjuntas, empleados y proveedores de cualquier responsabilidad ante cualquier reclamación o demanda (incluso los honorarios de abogados), multas o cualquier otra responsabilidad en la que haya incurrido algún tercero que surja de su incumplimiento de estos Términos y Condiciones y/o de su uso de los servicios de ePesos.</p>
+
+          <p class="bold">Resolución de Controversias</p>
+          <p>En ePesos hacemos el mejor intento de disminuir, o bien, eliminar todo tipo de controversias con nuestros usuarios. En caso de que surja una controversia entre ePesos y usted, se le solicita que en primera instancia contacte a nuestro departamento de Servicio al Cliente, el cual está disponible de 8:00 AM a 6:00 PM (hora de Monterrey), mediante chat o por teléfono llamando al número 800 037 3767. 
+          Las partes acuerdan que cualquier controversia o reclamación que usted haga en contra de ePesos será resuelta por los Tribunales del Fuero Común en el Estado de Nuevo León, renunciando las partes expresamente a cualquier otra jurisdicción que les pudiera corresponder por razón de sus domicilios presentes o futuros.</p>
+          
+          <p class="bold">Misceláneo</p>
+          
+          <p>Si alguna parte de estos Términos y Condiciones se considera ilegal, nula o inaplicable por cualquier árbitro o tribunal de jurisdicción competente, estos Términos y Condiciones en su conjunto no se considerarán ilegales, nulos o inaplicables, sino solo esa parte de estos que sea ilegal, nulo o inaplicable, que en consecuencia quedará excluida de estos Términos y Condiciones.<br>
+
+          Usted acepta que si ePesos no ejerce ni hace cumplir ningún derecho legal o recurso que esté contenido en estos Términos y Condiciones (o que ePesos tenga el beneficio de cualquier ley aplicable), esto no se considerará como una renuncia formal a los derechos de ePesos y que esos derechos o recursos aún estarán disponibles para ePesos.</p>
+
+          <p>Todos los convenios, acuerdos, representaciones y garantías hechas en estos Términos y Condiciones sobrevivirán a su aceptación de estos Términos y Condiciones y a la terminación de estos Términos y Condiciones.</p>
+          
+          <p>Estos Términos y Condiciones representan la comprensión y el acuerdo completo entre usted y ePesos con respecto a lo establecido dentro del mismo, y reemplaza a todos los demás acuerdos anteriores.</p>
+         </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
@@ -298,7 +716,7 @@
 
             <div class="w-85 d-flex float-right pt-lg-5 mt-lg-5">
               <div class="w-50 mr-lg-2">
-                <img class="img-fluid" src="img/beneficio1.png" alt="">
+                <img class="img-fluid" src="img/beneficio2.png" alt="">
               </div>
               <div class="w-40 py-lg-5 pl-lg-2">
                   <h2 class="my-lg-5 pt-lg-5">Acerca de ePesos</h2>
@@ -380,10 +798,10 @@
             <li> <a href="#"><i class="fab fa-youtube"></i></a></li> -->
           </ul>
         </div>
-        <div class="mt-lg-5 mt-4">
+        <!-- <div class="mt-lg-5 mt-4">
           <h4>Descarga la App</h4>
           <img class="w-40" src="img/google-play-badge.png" alt="Google Play">
-        </div>
+        </div> -->
       </div>
       <div class="col-12 col-lg-3 py-3 py-lg-0 mb-5 mt-3 mb-lg-0">
         <div class="row">
@@ -393,7 +811,7 @@
           </div>
           <div class="col-6 col-lg-12 mt-lg-5 text-lg-center text-left">
             <h4>¿No tienes cuenta?</h4>
-            <button class="outline-button register mt-3">Registrate</button>
+            <a href="https://anticipos.epesos.com" class="outline-button mt-3">Registrate</a>
           </div> 
         </div>
       </div>
@@ -406,7 +824,7 @@
     <div class="col-12 col-lg-9">
       <ul class="menu-footer text-lg-right text-left">
           <li class="py-2 py-lg-0"> <a href="http://portal.epesos.com/">Portal administrativo ePesos</a> <span class="ml-lg-4 d-lg-inline-block d-none">|</span class="ml-lg-4"></li class="py-2 py-lg-0">
-          <li class="py-2 py-lg-0"> <a href="faqs.html">Preguntas frecuentes </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li>
+          <!-- <li class="py-2 py-lg-0"> <a href="faqs.html">Preguntas frecuentes </a><span class="ml-lg-4 d-lg-inline-block d-none">|</span></li> -->
           <li class="py-2 py-lg-0"> 
             <button data-toggle="modal" data-target="#avisoPrivacidad" class="priv">Aviso de Privacidad </button>
             <span class="ml-lg-4 d-lg-inline-block d-none">|</span>

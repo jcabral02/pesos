@@ -137,6 +137,12 @@ section{
                 border-bottom: 2px solid #39A935;
                 padding-bottom: 2px;
               }
+              a.link{
+                &:hover{
+                  border-bottom: 2px solid #39A935;
+                  padding-bottom: 2px;
+                }
+              }
           }
       }
       .movil-menu{
@@ -154,8 +160,10 @@ section{
 .header-alt{
   @extend .header;
   background: rgba(0,0,0,0.7);
-  //Ajuste alto de header
   padding: 12px 20px;
+  .logo{
+    margin-top: 10px;
+  }
 }
 nav{
   .main-menu{
@@ -256,6 +264,9 @@ footer{
         }
           a{
               color: $white;
+              &:hover{
+                opacity: 0.8;
+              }
           }
       }
   }
@@ -280,26 +291,45 @@ footer{
     opacity: 1;
     padding: 10px 25px;
     display: inline-block;
+    border-top: 1px solid transparent;
 }
 .rounded-button-white{
     @extend .rounded-button;
     background: $white 0% 0% no-repeat padding-box;
     &:hover{
-      color: $dark-green;
+      color: $white;
+      background: #385E67;
+      border:none;
     }
 }
+.rounded-button-white-transparent{
+  @extend .rounded-button;
+  background: $white 0% 0% no-repeat padding-box;
+  &:hover{
+    color: $white !important;
+    background: transparent;
+    border:1px solid $white;
+  }
+}
+
 .rounded-button-gradient{
     @extend .rounded-button;
     //Ajuste gradiante botones
     background: linear-gradient(180deg, rgba(46,165,54,1) 0%, rgba(13,132,120,1) 100%);
     color: $white;
+    &:hover{
+      background: #2F932B;
+      color: $white;
+    }
 }
 .rounded-button-blue{
     @extend .rounded-button;
     background: $dark-blue 0% 0% no-repeat padding-box;
     color: $white;
     &:hover{
-      color: $white;
+      border: 1px solid #385E67;
+      background: $white;
+      color: #385E67;
     }
 }
 .outline-button{
@@ -307,6 +337,10 @@ footer{
     color: $white;
     border: 2px solid $white;
     background: transparent;
+    &:hover{
+      background: $white;
+      color: #385E67;
+    }
 }
 
 #menu{

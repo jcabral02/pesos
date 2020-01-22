@@ -6,7 +6,7 @@ $(document).ready(function(){
     nav: true,
     loop:true,
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:8000,
     margin:0
   });
 

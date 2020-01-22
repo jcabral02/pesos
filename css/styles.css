@@ -134,6 +134,9 @@ section {
       .header nav .main-menu li .active, .header-alt nav .main-menu li .active, .header-empresas nav .main-menu li .active {
         border-bottom: 2px solid #39A935;
         padding-bottom: 2px; }
+      .header nav .main-menu li a.link:hover, .header-alt nav .main-menu li a.link:hover, .header-empresas nav .main-menu li a.link:hover {
+        border-bottom: 2px solid #39A935;
+        padding-bottom: 2px; }
   .header nav .movil-menu, .header-alt nav .movil-menu, .header-empresas nav .movil-menu {
     text-align: right; }
     .header nav .movil-menu li, .header-alt nav .movil-menu li, .header-empresas nav .movil-menu li {
@@ -145,6 +148,8 @@ section {
 .header-alt {
   background: rgba(0, 0, 0, 0.7);
   padding: 12px 20px; }
+  .header-alt .logo {
+    margin-top: 10px; }
 
 nav .main-menu {
   text-align: right; }
@@ -226,13 +231,15 @@ footer {
         margin-right: 25%; } }
     footer .social li a {
       color: #fff; }
+      footer .social li a:hover {
+        opacity: 0.8; }
 
 .divider {
   width: 80%;
   border: 0.5px solid #D6D6D6;
   margin: 0 auto; }
 
-.rounded-button, .rounded-button-white, .rounded-button-gradient, .rounded-button-blue, .outline-button {
+.rounded-button, .rounded-button-white, .rounded-button-white-transparent, .rounded-button-gradient, .rounded-button-blue, .outline-button {
   border-radius: 24px;
   opacity: 1;
   font: Bold 18px/24px Open Sans;
@@ -240,28 +247,46 @@ footer {
   color: #385E67;
   opacity: 1;
   padding: 10px 25px;
-  display: inline-block; }
+  display: inline-block;
+  border-top: 1px solid transparent; }
 
 .rounded-button-white {
   background: #fff 0% 0% no-repeat padding-box; }
   .rounded-button-white:hover {
-    color: #385E67; }
+    color: #fff;
+    background: #385E67;
+    border: none; }
+
+.rounded-button-white-transparent {
+  background: #fff 0% 0% no-repeat padding-box; }
+  .rounded-button-white-transparent:hover {
+    color: #fff !important;
+    background: transparent;
+    border: 1px solid #fff; }
 
 .rounded-button-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#2ea536), to(#0d8478));
   background: linear-gradient(180deg, #2ea536 0%, #0d8478 100%);
   color: #fff; }
+  .rounded-button-gradient:hover {
+    background: #2F932B;
+    color: #fff; }
 
 .rounded-button-blue {
   background: #385E67 0% 0% no-repeat padding-box;
   color: #fff; }
   .rounded-button-blue:hover {
-    color: #fff; }
+    border: 1px solid #385E67;
+    background: #fff;
+    color: #385E67; }
 
 .outline-button {
   color: #fff;
   border: 2px solid #fff;
   background: transparent; }
+  .outline-button:hover {
+    background: #fff;
+    color: #385E67; }
 
 #menu {
   display: -webkit-box;
@@ -644,6 +669,9 @@ footer {
             flex-direction: column;
     text-align: center;
     padding: 1vh; }
+    @media (max-width: 676px) {
+      #pop-up #modal-up {
+        width: 90%; } }
     #pop-up #modal-up i {
       text-align: right;
       padding-right: .5vw;
@@ -707,15 +735,25 @@ footer {
       -webkit-box-direction: normal;
               flex-direction: column;
       height: 100%; }
+      #pop-up #modal-up #message i {
+        color: #39A935;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 40px; }
+      #pop-up #modal-up #message h3 {
+        color: #39A935;
+        font-size: 30px; }
+      #pop-up #modal-up #message p {
+        color: #454545;
+        font-size: 20px; }
       #pop-up #modal-up #message input[type=submit] {
         margin-top: 6vh;
-        background: -webkit-gradient(linear, left bottom, left top, from(#218d69), to(#008000));
-        background: linear-gradient(to top, #218d69, #008000);
-        border: none;
-        color: white;
+        background: #fff;
+        border: 2px solid #385E67;
+        border-radius: 24px;
+        color: #385E67;
         padding: 1vw;
         width: 60%;
-        border-radius: 50px;
         font-weight: 600;
         font-size: 18px; }
 
@@ -724,6 +762,12 @@ footer {
   background-color: transparent;
   color: #ffffff;
   font-size: 14px; }
+
+#slider-superior .owl-stage-outer {
+  height: 880px; }
+  @media (max-width: 676px) {
+    #slider-superior .owl-stage-outer {
+      height: 670px; } }
 
 .owl-carousel {
   display: -webkit-box;
@@ -746,14 +790,14 @@ footer {
       .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
         position: relative;
         z-index: 9999;
-        top: 60%;
+        top: 300px;
         left: 0; }
         @media (max-width: 676px) {
           .owl-carousel .owl-stage-outer .owl-stage .owl-item .content-slider {
-            top: 80%; } }
+            top: 210px; } }
       .owl-carousel .owl-stage-outer .owl-stage .owl-item .overlay {
         position: absolute;
-        height: 800px;
+        height: 880px;
         background: -webkit-gradient(linear, left top, left bottom, from(#218d69), to(rgba(5, 108, 164, 0.8)));
         background: linear-gradient(180deg, #218d69 0%, rgba(5, 108, 164, 0.8) 100%);
         z-index: 888;
@@ -761,7 +805,7 @@ footer {
         left: 0;
         width: 100%; }
       .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
-        height: 800px; }
+        height: 880px; }
         @media (max-width: 676px) {
           .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-1, .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide-2 {
             height: 620px; } }
@@ -835,6 +879,28 @@ footer {
       .beneficios-movil-empresas .owl-stage-outer {
         height: 100vh; } }
 
+.curva-empresas {
+  background: url("../img/curva-empresas.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: -150px;
+  right: 0;
+  left: 0; }
+
+.curva-empresas-bottom {
+  background: url("../img/curva-empresas-bottom.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: -150px;
+  right: 0;
+  left: 0; }
+
 .slider-basico {
   background: url("../img/slider1.jpg") no-repeat;
   background-size: cover !important;
@@ -854,6 +920,19 @@ footer {
   .owl-carousel .owl-nav {
     display: -webkit-box;
     display: flex; } }
+
+.modal-header h5 {
+  color: #385E67;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700; }
+
+#aviso p, #terminos p {
+  font-size: 14px;
+  color: #385E67; }
+
+#aviso .bold, #terminos .bold {
+  font-weight: 900; }
 
 body {
   overflow-x: hidden; }
@@ -1033,8 +1112,8 @@ nav .main-menu {
 
 .main {
   position: relative;
-  top: -320px;
-  margin-bottom: -320px;
+  top: -330px;
+  margin-bottom: -330px;
   z-index: 900; }
   @media (max-width: 676px) {
     .main {
@@ -1082,11 +1161,13 @@ nav .main-menu {
   @media (max-width: 676px) {
     .sin-costo, .bajo-costo {
       padding: 30px 0; } }
-  @media (max-width: 676px) {
-    .sin-costo h4, .bajo-costo h4 {
-      font-size: 16px;
-      width: 80%;
-      margin: 0 auto; } }
+  .sin-costo h4, .bajo-costo h4 {
+    font-weight: 600; }
+    @media (max-width: 676px) {
+      .sin-costo h4, .bajo-costo h4 {
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto; } }
 
 .bajo-costo {
   border-top-left-radius: 0px;
@@ -1156,9 +1237,6 @@ nav .main-menu {
 
 .beneficios-empresas {
   padding: 60px 0;
-  background: url("../img/ondas.png") no-repeat;
-  background-size: contain;
-  background-position: center;
   position: relative;
   margin-top: -27vh;
   margin-bottom: -2px;
@@ -1168,7 +1246,7 @@ nav .main-menu {
     .beneficios-empresas {
       background-size: cover; } }
   .beneficios-empresas .beneficio {
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
     .beneficios-empresas .beneficio .paso {
       text-align: right;
       font: 700 60px/24px "Open Sans", sans-serif;
@@ -1183,10 +1261,11 @@ nav .main-menu {
       opacity: 1; }
     .beneficios-empresas .beneficio p {
       text-align: left;
-      font: Regular 14px/26px Open Sans;
+      font-weight: 400;
+      font-size: 14px;
       letter-spacing: 0;
       color: #385E67;
-      opacity: 1; }
+      line-height: 26px; }
 
 .cuadros-comparacion {
   position: relative; }
