@@ -220,7 +220,14 @@ footer{
           opacity: 80%;
           font-size: 14px;
       }
-  }
+    }
+    .login{
+      button{
+        @media (max-width: 676px) {
+          font-size: 16px;
+      }
+      }
+    }
   }
   
   p, h3, h4{
